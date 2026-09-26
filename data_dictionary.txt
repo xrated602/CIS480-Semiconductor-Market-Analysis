@@ -1,0 +1,81 @@
+================================================================================
+CIS480 CAPSTONE: NASDAQ-100 SEMICONDUCTOR MARKET DATASET DATA DICTIONARY
+================================================================================
+Dataset Name: cleaned_market_data_2021_2025.csv
+Coverage Period: 2021-01-04 through 2025-12-31
+Tickers Included: AMD, NVDA, INTC, TSM, AVGO, SPDR S&P 500 ETF Trust
+Primary Role: Unformatted numerical engine for Power BI (DAX) & Python modeling
+
+--------------------------------------------------------------------------------
+FIELD DEFINITIONS & SPECIFICATIONS
+--------------------------------------------------------------------------------
+
+1. Trading_Date
+   - Data Type: Date (YYYY-MM-DD)
+   - Description: Market trading date with non-trading days/weekends removed.
+   - Example: 2021-01-04
+
+2. Ticker
+   - Data Type: String / Text
+   - Description: Unique ticker symbol representing the individual asset or benchmark.
+   - Values: AMD, NVDA, INTC, TSM, AVGO, SPY
+
+3. Asset_Class
+   - Data Type: String / Text
+   - Description: Categorical classification tag to differentiate individual equities from the benchmark index.
+   - Values: Equity, Benchmark
+
+4. Adj_Close
+   - Data Type: Float / Decimal
+   - Description: Split and dividend-adjusted closing price in USD.
+   - Formula: Source data auto-adjusted via Yahoo Finance API.
+
+5. Volume
+   - Data Type: Integer
+   - Description: Total volume of shares traded on the given trading date.
+
+6. Daily_Return
+   - Data Type: Float / Decimal (Proportion)
+   - Description: Daily percentage price change relative to the prior trading day.
+   - Formula: (Adj_Close_t - Adj_Close_{t-1}) / Adj_Close_{t-1}
+   - Note: First row per ticker is NaN/Null due to missing prior reference date.
+
+7. Cumulative_Return
+   - Data Type: Float / Decimal (Proportion)
+   - Description: Running cumulative performance relative to the dataset baseline price on 2021-01-04.
+   - Formula: (Adj_Close_t / Adj_Close_start) - 1
+
+8. Drawdown
+   - Data Type: Float / Decimal (Proportion)
+   - Description: Current price drop relative to the ticker's running maximum high price to date.
+   - Formula: (Adj_Close_t - Rolling_Peak_t) / Rolling_Peak_t
+
+9. Trading_Day_Count
+   - Data Type: Integer
+   - Description: Sequential trading day index (1, 2, ..., N) calculated per ticker.
+
+10. Normalized_Price
+    - Data Type: Float / Decimal
+    - Description: Indexed asset price normalized to a base value of 100.00 on the initial start date.
+    - Formula: (Adj_Close_t / Adj_Close_start) * 100
+
+11. Benchmark_Difference
+    - Data Type: Float / Decimal (Proportion)
+    - Description: Daily excess return (Alpha) of the asset relative to the SPY benchmark daily return.
+    - Formula: Daily_Return_Ticker - Daily_Return_SPY
+    - Note: Value is 0.00 for the SPY benchmark row itself.
+
+12. Annual_Return
+    - Data Type: Float / Decimal (Proportion)
+    - Description: Calendar Year-over-Year return evaluated within each specific calendar year.
+    - Formula: (Adj_Close_Year_End / Adj_Close_Year_Start) - 1
+
+================================================================================
+INTEGRATION & USAGE NOTES FOR ANALYTICS
+================================================================================
+- Power BI Relationship: Link 'Trading_Date' to a central Calendar/Date dimension 
+  table with a 1-to-Many single-direction relationship.
+- Raw Data Precision: Numerical fields are kept as unformatted floats to ensure 
+  mathematical precision during aggregation and model processing. Use visual-level 
+  formatting in Power BI / Python plots to apply percentage signs (%).
+================================================================================
