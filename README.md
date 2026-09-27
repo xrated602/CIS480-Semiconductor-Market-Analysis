@@ -45,18 +45,19 @@ The project uses:
 - **yfinance** to retrieve historical market data
 - **Python** for data preparation and calculations
 - **Jupyter Notebook** for the reproducible analysis workflow
-- **CSV files** for appropriate cleaned or derived project outputs
-- **Power BI** for the planned final dashboard
+- **CSV files** for raw, cleaned, and derived project data
+- **Power BI** for the interactive market performance and risk dashboard
+- **GitHub** for project organization and version control
 
 Project workflow:
 
-`yfinance → Python/Jupyter Notebook → Validation and KPI Calculations → Derived Outputs → Power BI Dashboard`
+`yfinance → Python/Jupyter Notebook → Data Validation → KPI Calculations → Processed Data → Power BI Dashboard`
 
-## First Working Build
+## Analysis Build
 
-The current Jupyter Notebook provides an end-to-end working path from historical market data to validated KPI results.
+The final master Jupyter Notebook provides an end-to-end analytical workflow from historical market data through validation and KPI calculations.
 
-The first build includes:
+The analysis includes:
 
 - Six securities: AMD, NVDA, INTC, TSM, AVGO, and SPY
 - 1,255 trading dates
@@ -65,13 +66,13 @@ The first build includes:
 - Cumulative return calculations
 - Annualized volatility calculations
 - Maximum drawdown calculations
+- Processed datasets prepared for dashboard development
+- KPI validation prior to Power BI visualization
 
-The A04 notebook validation status is **Passed**.
-
-## Current KPI Results
+## Validated KPI Results
 
 | Security | Cumulative Return | Annualized Volatility | Maximum Drawdown |
-|---|---:|---:|---:|
+|----------|------------------:|----------------------:|-----------------:|
 | AMD | 132.03% | 52.41% | -65.45% |
 | AVGO | 804.76% | 42.31% | -41.15% |
 | INTC | -17.82% | 46.24% | -70.80% |
@@ -81,15 +82,41 @@ The A04 notebook validation status is **Passed**.
 
 These results describe the selected 2021–2025 historical period only and should not be interpreted as predictions of future performance.
 
+## Power BI Dashboard
+
+The project includes an interactive Power BI dashboard titled:
+
+**Semiconductor Market Performance & Risk**
+
+The dashboard provides a visual comparison of the five semiconductor stocks and SPY across the three primary project measures.
+
+Dashboard features include:
+
+- **Date Range slicer** for selecting a historical analysis period
+- **Security slicer** for selecting an individual security
+- **Cumulative Return KPI card**
+- **Annualized Volatility KPI card**
+- **Maximum Drawdown KPI card**
+- **Cumulative Return vs. SPY line chart**
+- **Annualized Volatility comparison chart**
+- **Maximum Drawdown comparison chart**
+
+The KPI cards respond to the selected security and date range. The comparison charts display all six securities so users can compare the selected semiconductor stocks with the SPY benchmark.
+
+The cumulative return chart rebases performance to the beginning of the selected date range, allowing securities to be compared from a common starting point.
+
 ## Team Responsibilities
 
 ### Rey Guirette — Data Architecture & Data Preparation
+
 Rey is responsible for historical data retrieval and review, cleaning, organization, required-field checks, and preparation of the analysis-ready dataset.
 
 ### Colen Wilson — Python Analysis & Quality Validation
+
 Colen is responsible for the Python calculations for cumulative return, annualized volatility, and maximum drawdown, along with analytical validation and quality checks.
 
 ### Luis Ramirez — Project Coordinator / Power BI & Business Analysis
+
 Luis is responsible for project coordination, KPI and acceptance-criteria definitions, Power BI dashboard development, stakeholder usability, interpretation, documentation, and final project integration.
 
 All three team members review the final project and supporting evidence.
@@ -99,45 +126,14 @@ All three team members review the final project and supporting evidence.
 ```text
 CIS480-Semiconductor-Market-Analysis/
 ├── README.md
+├── data/
+│   ├── raw/
+│   │   └── CIS480_Raw_Stock_Data_2021_2025.csv
+│   └── processed/
+│       ├── cleaned_market_data_2021_2025.csv
+│       ├── cleaned_market_data_formatted_2021_2025.csv
+│       └── kpi_summary_metrics_2021_2025.csv
 ├── notebooks/
-│   └── CIS480_Historical_Stock_Analysis_A04.ipynb
-├── outputs/
-│   └── derived project outputs
-├── powerbi/
-│   └── Power BI project files
-└── documentation/
-    └── project reports and supporting documentation
-```
-
-Folders and files will be added as the project progresses.
-
-## Running the Analysis
-
-1. Open the Jupyter Notebook in the `notebooks` folder.
-2. Install the required Python libraries if they are not already available.
-3. Run the notebook cells in order from beginning to end.
-4. Review the validation output before using the calculated results.
-5. Confirm that all six securities are present and that the three KPI measures are produced for each security.
-
-Additional environment and dependency details will be documented as the project repository is completed.
-
-## Data Use
-
-Historical market data is retrieved using yfinance. Downloaded source data should not be published in a public repository. This repository will focus on project code, documentation, and appropriate derived outputs while following applicable data-use requirements.
-
-## Current Project Status
-
-The Python/Jupyter analysis and A04 first working vertical slice are operational. The Power BI dashboard and final project documentation are still in development.
-
-## Limitations
-
-- The analysis covers only January 1, 2021, through December 31, 2025.
-- The five selected companies do not represent the entire semiconductor industry.
-- Cumulative return, annualized volatility, and maximum drawdown do not capture every aspect of investment performance or risk.
-- SPY is a broad-market benchmark and does not control for every difference between individual semiconductor companies and the overall market.
-- Historical results do not guarantee or predict future performance.
-- The stakeholder is hypothetical, so no real stakeholder feedback is claimed unless actual testing occurs.
-
-## Responsible AI Use
-
-ChatGPT by OpenAI has been used as a support tool for organizing project ideas, reviewing assignment requirements, improving report structure and wording, and assisting with parts of the notebook workflow. The team reviews retained AI-assisted material against the project data, notebook output, and course requirements. AI-generated statements are not treated as evidence that the data or calculations are correct.
+│   └── CIS480_Final_Master_Analysis.ipynb
+└── powerbi/
+    └── CIS480_Semiconductor_Market_Performance_Dashboard.pbix
