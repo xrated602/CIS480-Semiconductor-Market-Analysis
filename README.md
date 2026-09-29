@@ -129,6 +129,11 @@ CIS480-Semiconductor-Market-Analysis/
 │       ├── cleaned_market_data_2021_2025.csv
 │       ├── cleaned_market_data_formatted_2021_2025.csv
 │       └── kpi_summary_metrics_2021_2025.csv
+├── docs/
+│   ├── data_card.md
+│   ├── data_dictionary.txt
+│   ├── week05_validation_record.md
+│   └── week05_work_plan_contribution_record.md
 ├── notebooks/
 │   └── CIS480_Final_Master_Analysis.ipynb
 └── powerbi/
