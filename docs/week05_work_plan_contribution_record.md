@@ -13,8 +13,8 @@ This record documents the current Week 5 work plan, ownership, dependencies, acc
 |---|---|---|---|---|---|
 | Rey Guirette | Historical data retrieval, preparation, data-quality support, and original data dictionary | Complete / integrated | Required market data and agreed project tickers/date range | Required source fields are available for all six securities and documentation describes the analytical fields | Rey's individual branch; original data dictionary; final team-reviewed dictionary in `docs/data_dictionary.txt` |
 | Colen Wilson | Review Python calculations and provide independent KPI/analysis validation | Complete / integrated | Cleaned analytical data and agreed KPI definitions | Calculations can be reviewed against the master analysis and discrepancies are resolved before final use | Colen's individual branch and analysis/validation notebook |
-| Luis Ramirez | Project coordination, research questions/KPIs, master-notebook integration, Power BI dashboard, repository organization, and Week 5 documentation | In progress | Rey and Colen's individual work plus final integrated dataset | Master workflow runs end-to-end, Week 5 data-quality checks pass, dashboard uses validated outputs, and required documentation is traceable in the repository | `notebooks/CIS480_Final_Master_Analysis.ipynb`, Power BI artifact, README, `docs/data_card.md`, `docs/week05_validation_record.md`, and repository integration commits |
-| Team | Review final Week 5 package | In progress | Data dictionary, data card, validation record, limitations, sources/AI disclosure, and contribution evidence completed | All required Week 5 components are present, accessible, consistent with the executed notebook, and reviewed before submission | Final files and commit history on `main` |
+| Luis Ramirez | Project coordination, research questions/KPIs, master-notebook integration, Power BI dashboard, repository organization, and Week 5 documentation | Complete / integrated | Rey and Colen's individual work plus final integrated dataset | Master workflow runs end-to-end, Week 5 data-quality checks pass, dashboard uses validated outputs, and required documentation is traceable in the repository | `notebooks/CIS480_Final_Master_Analysis.ipynb`, Power BI artifact, README, `docs/data_card.md`, `docs/week05_validation_record.md`, and repository integration commits |
+| Team | Review final Week 5 package | Complete | Data dictionary, data card, validation record, limitations, sources/AI disclosure, and contribution evidence completed | All required Week 5 components are present, accessible, consistent with the executed notebook, and reviewed before submission | Final files and commit history on `main` |
 
 ## Contribution Details
 
@@ -42,7 +42,7 @@ For Week 5, Luis added the data-quality profile and validation section to the ma
 **Evidence:** `notebooks/CIS480_Final_Master_Analysis.ipynb`, Power BI artifact, README, `docs/data_card.md`, `docs/week05_validation_record.md`, and GitHub commit history.
 
 ## Current Dependencies
-The core analytical workflow and Week 5 validation are complete. Remaining submission work depends on assembling the final Section 3 narrative, limitations statement, sources/AI-use disclosure, and confirming that all required evidence links are accessible to the instructor.
+The core analytical workflow and Week 5 validation are complete. The Section 3 narrative, limitations statement, sources/AI-use disclosure, and required Week 5 evidence have been assembled and reviewed for final submission.
 
 A separate data-governance issue remains documented in the data card: the project has not established unrestricted redistribution rights for the underlying Yahoo Finance market data. This does not change the internal Week 5 validation result, but it affects how raw source-derived data should be shared.
 
@@ -59,5 +59,6 @@ The Week 5 package is ready for submission when:
 
 ## Current Status
 **Week 5 technical evidence: Complete.**  
-**Week 5 documentation package: In progress.**  
-**Final team review/submission: Pending.**
+**Week 5 documentation package: Complete.**  
+**Final team review: Complete.**  
+**Submission status: Ready for submission.**
