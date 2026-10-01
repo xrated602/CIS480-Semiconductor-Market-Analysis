@@ -174,7 +174,7 @@ The Week 6 baseline independently recalculates SPY cumulative return from the fi
 
 `(Ending Adjusted Close / Beginning Adjusted Close) - 1`
 
-Using the project values, the independent baseline is approximately **98.0847%**, which reconciles with the existing displayed SPY KPI of **98.08%**. The executable notebook test compares the unrounded baseline with the pipeline result and passes when the absolute difference is no greater than **0.0001 as a proportion (0.01 percentage point)**.
+In the executed Week 6 notebook, the independent baseline is **98.084691%** and the pipeline result is **98.084691%**, producing an absolute difference of **0.0000000000** and a **PASSED** status. The executed notebook test compares the unrounded baseline with the pipeline result and passes when the absolute difference is no greater than **0.0001 as a proportion (0.01 percentage point)**.
 
 Random cross-validation is not used because this is a descriptive dashboard project rather than a predictive model. Calculation reconciliation, data-quality checks, and reproducible dashboard tests are better matched to the project's claims.
 
