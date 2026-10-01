@@ -161,6 +161,44 @@ Historical market data was retrieved using yfinance for educational analysis. Th
 
 The project is intended for educational purposes and historical analysis only.
 
+
+## Week 6 Methodology Architecture and Baseline
+
+Week 6 documents the project's end-to-end analytical methodology and adds a reproducible baseline reconciliation test. The smallest complete pipeline path is:
+
+`Yahoo Finance / yfinance → raw CSV snapshot → Python/Jupyter preprocessing → data-quality validation → KPI calculation → processed CSV → Power BI dashboard`
+
+### Baseline and Evaluation
+
+The Week 6 baseline independently recalculates SPY cumulative return from the first and last adjusted closing prices in the validated analytical dataset:
+
+`(Ending Adjusted Close / Beginning Adjusted Close) - 1`
+
+Using the project values, the independent baseline is approximately **98.0847%**, which reconciles with the existing displayed SPY KPI of **98.08%**. The executable notebook test compares the unrounded baseline with the pipeline result and passes when the absolute difference is no greater than **0.0001 as a proportion (0.01 percentage point)**.
+
+Random cross-validation is not used because this is a descriptive dashboard project rather than a predictive model. Calculation reconciliation, data-quality checks, and reproducible dashboard tests are better matched to the project's claims.
+
+### Reproducibility
+
+1. Install the Python dependencies listed in `requirements.txt`.
+2. Open `notebooks/CIS480_Final_Master_Analysis.ipynb`.
+3. Run the notebook cells in order.
+4. Confirm the Week 5 data-quality checks pass before interpreting KPI output.
+5. Run the Week 6 SPY cumulative-return reconciliation test.
+6. Confirm the independent baseline and pipeline result are within the stated tolerance.
+7. Review the processed CSV outputs before refreshing or interpreting the Power BI dashboard.
+
+The Week 6 test supports the tested SPY cumulative-return reconciliation only. It does not establish that every source value, every KPI, or every Power BI interaction is error-free, and historical results are not predictions of future performance.
+
+### Week 6 Evidence
+
+- `notebooks/CIS480_Final_Master_Analysis.ipynb` — executable methodology and baseline test
+- `requirements.txt` — Python dependency list
+- `docs/week06_architecture_diagram.png` — accessible architecture visual
+- `docs/week06_baseline_validation_record.md` — input, expected result, actual result, decision rule, status, and limitations
+- `docs/week06_work_plan_contribution_record.md` — owner, task, status, dependency, acceptance criterion, and contribution evidence
+
+
 ## Project Status
 
 The core CIS480 market-analysis workflow is complete.
