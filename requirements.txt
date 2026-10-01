@@ -1,0 +1,5 @@
+# CIS480 reproducible Python dependencies
+yfinance
+pandas
+numpy
+jupyter
