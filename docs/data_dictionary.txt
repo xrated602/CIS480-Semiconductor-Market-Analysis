@@ -1,0 +1,131 @@
+================================================================================
+CIS480 CAPSTONE: SEMICONDUCTOR MARKET ANALYSIS DATA DICTIONARY
+================================================================================
+Dataset Name: cleaned_market_data_2021_2025.csv
+Coverage Period: 2021-01-04 through 2025-12-31
+Tickers Included: AMD, NVDA, INTC, TSM, AVGO, SPY
+Primary Role: Unformatted numerical dataset used for Python analysis and Power BI.
+
+--------------------------------------------------------------------------------
+FIELD DEFINITIONS & SPECIFICATIONS
+--------------------------------------------------------------------------------
+
+1. Trading_Date
+   - Data Type: Date (YYYY-MM-DD)
+   - Description: Market trading date with non-trading days/weekends absent from the dataset.
+   - Example: 2021-01-04
+
+2. Adj_Close
+   - Data Type: Float / Decimal
+   - Description: Auto-adjusted closing price used for the historical analysis.
+   - Source/Processing: Historical price data retrieved with yfinance using auto_adjust=True.
+
+3. Volume
+   - Data Type: Integer
+   - Description: Total trading volume reported for the security on the trading date.
+
+4. Daily_Return
+   - Data Type: Float / Decimal (Proportion)
+   - Description: Daily price return relative to the prior available trading day.
+   - Formula: (Adj_Close_t / Adj_Close_{t-1}) - 1
+   - Missingness: The first observation for each ticker is NaN because no prior
+     observation exists in the dataset. The Week 5 profile confirmed 6 expected
+     missing values, one for each security.
+
+5. Cumulative_Return
+   - Data Type: Float / Decimal (Proportion)
+   - Description: Running cumulative performance relative to each ticker's first
+     adjusted closing price in the dataset.
+   - Formula: (Adj_Close_t / Adj_Close_start) - 1
+
+6. Rolling_Peak
+   - Data Type: Float / Decimal
+   - Description: Highest adjusted closing price observed for the ticker from the
+     beginning of the dataset through the current trading date.
+   - Formula: Cumulative maximum of Adj_Close by ticker.
+
+7. Drawdown
+   - Data Type: Float / Decimal (Proportion)
+   - Description: Current decline from the ticker's running peak.
+   - Formula: (Adj_Close_t - Rolling_Peak_t) / Rolling_Peak_t
+
+8. Ticker
+   - Data Type: String / Text
+   - Description: Ticker symbol identifying the security or benchmark.
+   - Allowed Values: AMD, AVGO, INTC, NVDA, SPY, TSM
+
+9. Company
+   - Data Type: String / Text
+   - Description: Human-readable company or benchmark name associated with each ticker.
+
+10. Asset_Class
+    - Data Type: String / Text
+    - Description: Classification used to distinguish the selected semiconductor
+      equities from the benchmark.
+    - Allowed Values: Equity, Benchmark
+
+11. Trading_Day_Count
+    - Data Type: Integer
+    - Description: Sequential trading-day index calculated separately for each ticker.
+    - Valid Range: 1 or greater.
+
+12. Normalized_Price
+    - Data Type: Float / Decimal
+    - Description: Adjusted closing price indexed to 100 at the ticker's first
+      observation so securities with different price levels can be compared.
+    - Formula: (Adj_Close_t / Adj_Close_start) * 100
+
+13. Benchmark_Difference
+    - Data Type: Float / Decimal (Proportion)
+    - Description: Difference between a security's Daily_Return and SPY's
+      Daily_Return on the same Trading_Date.
+    - Formula: Daily_Return_Ticker - Daily_Return_SPY
+    - Missingness: The first observation for each ticker is NaN because the first
+      Daily_Return is unavailable. The Week 5 profile confirmed 6 expected missing
+      values. For SPY, non-missing observations equal 0 because SPY is compared
+      with itself.
+
+14. Year
+    - Data Type: Integer
+    - Description: Calendar year extracted from Trading_Date.
+    - Allowed Range: 2021 through 2025.
+
+15. Annual_Return
+    - Data Type: Float / Decimal (Proportion)
+    - Description: Return calculated from the first to the last available adjusted
+      closing price within each ticker and calendar year.
+    - Formula: (Adj_Close_Year_End / Adj_Close_Year_Start) - 1
+
+--------------------------------------------------------------------------------
+WEEK 5 DATA QUALITY NOTES
+--------------------------------------------------------------------------------
+- Final analytical dataset: 7,530 rows.
+- Unique trading dates: 1,255.
+- Securities represented: 6.
+- Composite key: Trading_Date + Ticker.
+- Duplicate composite keys found: 0.
+- Missing Adj_Close values: 0.
+- Daily_Return missing values: 6 expected structural missing values.
+- Benchmark_Difference missing values: 6 expected structural missing values.
+- Each security contains 1,255 observations.
+- Logical range and validity checks in the executed Week 5 notebook passed.
+- Extreme observed values are retained for review rather than automatically removed
+  using an arbitrary outlier threshold.
+
+--------------------------------------------------------------------------------
+INTEGRATION & USAGE NOTES
+--------------------------------------------------------------------------------
+- Numerical fields are kept as numeric values rather than percentage-formatted text
+  in the primary analytical dataset.
+- Percentage formatting is applied in Power BI or presentation outputs rather than
+  changing the underlying numeric values.
+- The dataset supports historical comparison of the five selected semiconductor
+  stocks with SPY. It is not intended as a forecasting or investment-advice dataset.
+
+--------------------------------------------------------------------------------
+CONTRIBUTION NOTE
+--------------------------------------------------------------------------------
+Original data dictionary prepared by Rey Guirette. The team reviewed and updated the
+dictionary during Week 5 integration so it matches the final 15-field master dataset
+and the executed data-quality validation results.
+================================================================================
