@@ -230,3 +230,19 @@ Additional course documentation may be added as the capstone progresses.
 ChatGPT by OpenAI was used as a support tool for organizing project ideas, reviewing assignment requirements, improving report structure and wording, assisting with portions of the notebook workflow, supporting Power BI dashboard development, and organizing the GitHub repository.
 
 The team reviewed retained AI-assisted material against the project data, notebook output, and course requirements. AI-generated statements were not treated as evidence that the data or calculations were correct. Final project decisions, validation, interpretation, and submitted work remain the responsibility of the project team.
+
+## Week 7 — Preliminary Results and Validation (T07)
+
+Week 7 adds an executed notebook and a draft Section 5 report. The results are **historical descriptive comparisons**, not forecasts or investment advice.
+
+- [Executed Week 7 master notebook](notebooks/CIS480_Final_Master_Analysis_W07.ipynb) — run cells from top to bottom; the notebook contains the Week 7 comparison outputs and independent NVDA annualized-volatility check.
+- [Section 5 preliminary results draft](docs/CIS480_T07_Section5_Preliminary_Results_DRAFT.docx) — team-review draft, not yet approved as final.
+- [Week 7 tracking and review issue](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/issues/2) — evidence, ownership, and team review status.
+
+**Scope and method:** AMD, AVGO, INTC, NVDA, TSM and SPY; January 2021–December 2025. Compare cumulative return, annualized daily-return volatility (sample standard deviation multiplied by square root of 252), and maximum drawdown. The notebook includes an independent NVDA volatility recomputation against the pipeline value, with a recorded tolerance and pass/fail outcome. Review the notebook's saved cell outputs and execution order before relying on them; rerunning market-data retrieval may yield revised data.
+
+**Interpretation limits:** Returns and drawdowns depend on the selected historical window and adjusted-price series; volatility does not represent all investment risks. Comparisons are descriptive and do not demonstrate causation or predict future returns. SPY is a broad-market reference, not a semiconductor-sector-matched control.
+
+**Team review:** Luis integrates documentation and results; Rey is asked to review data provenance and return comparisons; Colen is asked to review the volatility validation. Individual Week 7 reviews remain pending until documented in Issue #2.
+
+**AI-use disclosure:** AI assistance was used to help structure and draft the Week 7 notebook/report text and documentation. The team must verify all calculations, figures, interpretations, citations, and final revisions against executed outputs before submission.
