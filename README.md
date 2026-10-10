@@ -236,7 +236,8 @@ The team reviewed retained AI-assisted material against the project data, notebo
 Week 7 adds an executed notebook and a team-reviewed Section 5 report. The results are **historical descriptive comparisons**, not forecasts or investment advice.
 
 - [Executed Week 7 master notebook](notebooks/CIS480_Final_Master_Analysis_W07.ipynb) — run cells from top to bottom; the notebook contains the Week 7 comparison outputs and independent NVDA annualized-volatility check.
-- [Section 5 team-reviewed report](docs/CIS480_T07_Section5_Team_Reviewed.docx) — updated after Rey's and Colen's reviews; Luis confirmed the revised document looks good. Final submission confirmation remains pending.
+- [Section 5 final filename-corrected report](docs/CIS480_T07_Section5_Final_Filename_Corrected.docx) — latest version for Canvas submission; notebook filename reference corrected after team review. Final Canvas submission confirmation remains pending.
+- [Prior team-reviewed Section 5 report](docs/CIS480_T07_Section5_Team_Reviewed.docx) — retained for version history.
 - [Earlier Section 5 preliminary results draft](docs/CIS480_T07_Section5_Preliminary_Results_DRAFT.docx) — retained for version history.
 - [Week 7 tracking and review issue](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/issues/2) — evidence, ownership, and team review status.
 - [Processed KPI summary CSV](data/processed/kpi_summary_metrics_2021_2025.csv) and [cleaned daily market data CSV](data/processed/cleaned_market_data_2021_2025.csv) — underlying analysis evidence; the notebook's independent validation output is the primary Week 7 test record.
