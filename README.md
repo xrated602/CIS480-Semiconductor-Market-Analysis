@@ -236,7 +236,8 @@ The team reviewed retained AI-assisted material against the project data, notebo
 Week 7 adds an executed notebook and a draft Section 5 report. The results are **historical descriptive comparisons**, not forecasts or investment advice.
 
 - [Executed Week 7 master notebook](notebooks/CIS480_Final_Master_Analysis_W07.ipynb) — run cells from top to bottom; the notebook contains the Week 7 comparison outputs and independent NVDA annualized-volatility check.
-- [Section 5 preliminary results draft](docs/CIS480_T07_Section5_Preliminary_Results_DRAFT.docx) — team-review draft, not yet approved as final.
+- [Section 5 team-reviewed report](docs/CIS480_T07_Section5_Team_Reviewed.docx) — updated after Rey's and Colen's reviews; Luis confirmed the revised document looks good. Final submission confirmation remains pending.
+- [Earlier Section 5 preliminary results draft](docs/CIS480_T07_Section5_Preliminary_Results_DRAFT.docx) — retained for version history.
 - [Week 7 tracking and review issue](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/issues/2) — evidence, ownership, and team review status.
 
 **Scope and method:** AMD, AVGO, INTC, NVDA, TSM and SPY; January 2021–December 2025. Compare cumulative return, annualized daily-return volatility (sample standard deviation multiplied by square root of 252), and maximum drawdown. The notebook includes an independent NVDA volatility recomputation against the pipeline value, with a recorded tolerance and pass/fail outcome. Review the notebook's saved cell outputs and execution order before relying on them; rerunning market-data retrieval may yield revised data.
