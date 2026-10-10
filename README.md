@@ -240,7 +240,8 @@ Week 7 adds an executed notebook and a team-reviewed Section 5 report. The resul
 - [Prior team-reviewed Section 5 report](docs/CIS480_T07_Section5_Team_Reviewed.docx) — retained for version history.
 - [Earlier Section 5 preliminary results draft](docs/CIS480_T07_Section5_Preliminary_Results_DRAFT.docx) — retained for version history.
 - [Week 7 tracking and review issue](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/issues/2) — evidence, ownership, and team review status.
-- [Processed KPI summary CSV](data/processed/kpi_summary_metrics_2021_2025.csv) and [cleaned daily market data CSV](data/processed/cleaned_market_data_2021_2025.csv) — underlying analysis evidence; the notebook's independent validation output is the primary Week 7 test record.
+- [Week 7 validation record CSV](data/processed/week07_validation_record.csv) — NVDA independent volatility check: input/question, expected and actual results, status, decision rule, evidence link, and limitations. The notebook contains the underlying calculation and saved test output.
+- [Processed KPI summary CSV](data/processed/kpi_summary_metrics_2021_2025.csv) and [cleaned daily market data CSV](data/processed/cleaned_market_data_2021_2025.csv) — underlying analysis evidence.
 
 **Scope and method:** AMD, AVGO, INTC, NVDA, TSM and SPY; January 2021–December 2025. Compare cumulative return, annualized daily-return volatility (sample standard deviation multiplied by square root of 252), and maximum drawdown. The notebook includes an independent NVDA volatility recomputation against the pipeline value, with a recorded tolerance and pass/fail outcome. Review the notebook's saved cell outputs and execution order before relying on them; rerunning market-data retrieval may yield revised data.
 
