@@ -233,17 +233,18 @@ The team reviewed retained AI-assisted material against the project data, notebo
 
 ## Week 7 — Preliminary Results and Validation (T07)
 
-Week 7 adds an executed notebook and a draft Section 5 report. The results are **historical descriptive comparisons**, not forecasts or investment advice.
+Week 7 adds an executed notebook and a team-reviewed Section 5 report. The results are **historical descriptive comparisons**, not forecasts or investment advice.
 
 - [Executed Week 7 master notebook](notebooks/CIS480_Final_Master_Analysis_W07.ipynb) — run cells from top to bottom; the notebook contains the Week 7 comparison outputs and independent NVDA annualized-volatility check.
 - [Section 5 team-reviewed report](docs/CIS480_T07_Section5_Team_Reviewed.docx) — updated after Rey's and Colen's reviews; Luis confirmed the revised document looks good. Final submission confirmation remains pending.
 - [Earlier Section 5 preliminary results draft](docs/CIS480_T07_Section5_Preliminary_Results_DRAFT.docx) — retained for version history.
 - [Week 7 tracking and review issue](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/issues/2) — evidence, ownership, and team review status.
+- [Processed KPI summary CSV](data/processed/kpi_summary_metrics_2021_2025.csv) and [cleaned daily market data CSV](data/processed/cleaned_market_data_2021_2025.csv) — underlying analysis evidence; the notebook's independent validation output is the primary Week 7 test record.
 
 **Scope and method:** AMD, AVGO, INTC, NVDA, TSM and SPY; January 2021–December 2025. Compare cumulative return, annualized daily-return volatility (sample standard deviation multiplied by square root of 252), and maximum drawdown. The notebook includes an independent NVDA volatility recomputation against the pipeline value, with a recorded tolerance and pass/fail outcome. Review the notebook's saved cell outputs and execution order before relying on them; rerunning market-data retrieval may yield revised data.
 
 **Interpretation limits:** Returns and drawdowns depend on the selected historical window and adjusted-price series; volatility does not represent all investment risks. Comparisons are descriptive and do not demonstrate causation or predict future returns. SPY is a broad-market reference, not a semiconductor-sector-matched control.
 
-**Team review:** Luis integrates documentation and results; Rey is asked to review data provenance and return comparisons; Colen is asked to review the volatility validation. Individual Week 7 reviews remain pending until documented in Issue #2.
+**Team review:** Rey completed his data-provenance and cumulative-return review; Colen completed his NVDA volatility and risk review. Both reviews are linked in Issue #2. Luis is completing final evidence and submission checks; a separate clarification in Issue #2 corrects the wording about maximum drawdown depth.
 
 **AI-use disclosure:** AI assistance was used to help structure and draft the Week 7 notebook/report text and documentation. The team must verify all calculations, figures, interpretations, citations, and final revisions against executed outputs before submission.
