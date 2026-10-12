@@ -42,3 +42,15 @@
 **Actual:** 41 total cells, including 22 code cells; all 22 code cells have execution counts 1–22; zero saved `error` outputs. Source contains data-quality checks, six-security KPI calculation, SPY return reconciliation, NVDA volatility reconciliation and CSV exports. **Status: PASS for static saved-notebook inspection only.**
 
 **Limitations:** Static inspection does not prove that a fresh execution succeeds, that downloaded prices are unchanged, that saved outputs match the current committed CSVs, or that the PBIX works. The notebook fetches market data live with `yf.download`; an offline deterministic demo should instead use a frozen authorized input snapshot. A new Week 8 runtime test remains pending.
+
+## W08-04 — User-confirmed dashboard smoke test (2026-10-12)
+
+**Input / question:** Does the existing Power BI Desktop dashboard load, and do its filters work?
+
+**Expected:** Dashboard opens without an apparent failure; slicer/filter interactions respond.
+
+**Actual:** Luis reported, “Yes they do,” in response to the question, “Does your dashboard load correctly, and do the filters work?”
+
+**Status: PASS — user-reported basic smoke test only.** This confirmation is not a direct assistant inspection of the PBIX, does not establish that every security was individually selected, and does not validate the displayed KPI values against the committed CSV. Full six-security, three-KPI reconciliation and screenshot or recording evidence remain **PENDING**.
+
+**Evidence:** User confirmation in the project conversation, 2026-10-12. Add an inspectable screenshot/recording or GitHub review comment before final submission if required by the rubric.
