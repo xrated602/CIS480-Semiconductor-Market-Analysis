@@ -110,3 +110,11 @@
 | Maximum drawdown | -70.80% | -70.80% | PASS |
 
 **Decision rule:** Equality at two displayed decimal places. **Status: PASS — user-reported INTC numerical reconciliation.** CSV evidence is inspectable; Power BI values were supplied in conversation, not independently observed. TSM, SPY and date-filter recalculation remain pending. **Progress: 12/18 security-KPI combinations reconciled.**
+
+### W08-04 TSM cumulative return discrepancy (2026-10-12)
+
+**Input/question:** With TSM selected in Power BI, does cumulative return equal the committed [KPI summary CSV](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/blob/main/data/processed/kpi_summary_metrics_2021_2025.csv) at two decimal places?
+
+**Expected:** 195.86%. **User-reported actual:** 198.86%. **Difference:** +3.00 percentage points. **Status: FAIL / needs investigation (provisional, pending recheck).**
+
+**Next action:** Ask Luis to recheck the displayed TSM value and active date/slicer filters. If 198.86% is confirmed, compare the PBIX data snapshot and measure definition to the committed KPI summary. Do not edit source data to force a match. No conclusion about cause yet. TSM volatility and maximum drawdown are not yet checked.
