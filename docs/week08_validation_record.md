@@ -118,3 +118,7 @@
 **Expected:** 195.86%. **User-reported actual:** 198.86%. **Difference:** +3.00 percentage points. **Status: FAIL / needs investigation (provisional, pending recheck).**
 
 **Next action:** Ask Luis to recheck the displayed TSM value and active date/slicer filters. If 198.86% is confirmed, compare the PBIX data snapshot and measure definition to the committed KPI summary. Do not edit source data to force a match. No conclusion about cause yet. TSM volatility and maximum drawdown are not yet checked.
+
+### W08-04 TSM cumulative return correction (2026-10-12)
+
+Luis clarified that the previously reported 198.86% was a **typing error**. The actual displayed TSM cumulative return in Power BI is **195.86%**, matching the committed KPI summary CSV **195.86%** at two decimal places. **Final status for TSM cumulative return: PASS (user-reported).** The preceding provisional mismatch is retained as an audit trail but is resolved; it is not evidence of a dashboard defect. TSM volatility and maximum drawdown are still pending.
