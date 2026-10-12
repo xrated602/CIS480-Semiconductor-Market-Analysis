@@ -74,3 +74,15 @@
 **Decision rule:** Exact equality at two displayed decimal places. **Actual:** All three match. **Status: PASS — user-reported NVDA numerical reconciliation.**
 
 **Evidence boundary:** CSV is committed and inspectable; Power BI values were reported by the user in conversation rather than captured by an independent PBIX inspection or screenshot. Checks of the other five tickers and filter-dependent recalculation remain pending.
+
+### W08-04 AVGO KPI numeric reconciliation (2026-10-12)
+
+**Input/question:** With AVGO selected in Power BI, do three displayed KPIs match the committed [KPI summary CSV](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/blob/main/data/processed/kpi_summary_metrics_2021_2025.csv) rounded to two decimal places?
+
+| KPI | Expected from committed CSV | Actual reported by Luis from Power BI | Status |
+|---|---:|---:|---|
+| Cumulative return | 804.76% | 804.76% | PASS |
+| Annualized volatility | 42.31% | 42.31% | PASS |
+| Maximum drawdown | -41.15% | -41.15% | PASS |
+
+**Decision rule:** Equality at two displayed decimal places. **Status: PASS — user-reported AVGO numerical reconciliation.** CSV evidence is inspectable; Power BI values were supplied in conversation, not independently observed. Other tickers and date-filter recalculation remain pending.
