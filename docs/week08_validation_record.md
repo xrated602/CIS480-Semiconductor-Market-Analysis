@@ -134,3 +134,17 @@ Luis clarified that the previously reported 198.86% was a **typing error**. The 
 | Maximum drawdown | -56.47% | -56.47% | PASS |
 
 **Decision rule:** Equality at two displayed decimal places. **Status: PASS — user-reported TSM numerical reconciliation.** The earlier 198.86% entry was explicitly corrected as a typo; it is not a dashboard mismatch. CSV evidence is inspectable; PBIX values were supplied in conversation, not independently observed. SPY and date-filter recalculation remain pending. **Progress: 15/18 security-KPI combinations reconciled.**
+
+### W08-04 SPY KPI reconciliation and full-period summary (2026-10-12)
+
+**Input/question:** With SPY selected in Power BI, do all three KPI values match the committed [KPI summary CSV](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/blob/main/data/processed/kpi_summary_metrics_2021_2025.csv) rounded to two decimal places?
+
+| KPI | Expected from CSV | Actual reported by Luis from Power BI | Status |
+|---|---:|---:|---|
+| Cumulative return | 98.08% | 98.08% | PASS |
+| Annualized volatility | 17.11% | 17.11% | PASS |
+| Maximum drawdown | -24.50% | -24.50% | PASS |
+
+**Decision rule:** Exact match to two displayed decimal places. **Status: PASS — user-reported SPY numerical reconciliation.**
+
+**Aggregate status:** 18/18 full-period, two-decimal KPI comparisons passed across AMD, AVGO, INTC, NVDA, TSM and SPY. The results were supplied by Luis from Power BI and compared to committed CSV values; no screenshot or independent PBIX execution was obtained. Date-filtered KPI behavior, fresh frozen-input notebook execution, signed-out access, and team approvals remain pending. This is a PASS for full-period user-reported visual-to-CSV numeric agreement only, not complete Week 8 demo acceptance.
