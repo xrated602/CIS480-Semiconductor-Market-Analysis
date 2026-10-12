@@ -122,3 +122,15 @@
 ### W08-04 TSM cumulative return correction (2026-10-12)
 
 Luis clarified that the previously reported 198.86% was a **typing error**. The actual displayed TSM cumulative return in Power BI is **195.86%**, matching the committed KPI summary CSV **195.86%** at two decimal places. **Final status for TSM cumulative return: PASS (user-reported).** The preceding provisional mismatch is retained as an audit trail but is resolved; it is not evidence of a dashboard defect. TSM volatility and maximum drawdown are still pending.
+
+### W08-04 TSM KPI numeric reconciliation (2026-10-12)
+
+**Input/question:** With TSM selected in Power BI, do all three displayed KPIs match the committed [KPI summary CSV](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/blob/main/data/processed/kpi_summary_metrics_2021_2025.csv) rounded to two decimal places?
+
+| KPI | Expected from committed CSV | Actual reported by Luis from Power BI | Status |
+|---|---:|---:|---|
+| Cumulative return | 195.86% | 195.86% (corrected typo) | PASS |
+| Annualized volatility | 37.37% | 37.37% | PASS |
+| Maximum drawdown | -56.47% | -56.47% | PASS |
+
+**Decision rule:** Equality at two displayed decimal places. **Status: PASS — user-reported TSM numerical reconciliation.** The earlier 198.86% entry was explicitly corrected as a typo; it is not a dashboard mismatch. CSV evidence is inspectable; PBIX values were supplied in conversation, not independently observed. SPY and date-filter recalculation remain pending. **Progress: 15/18 security-KPI combinations reconciled.**
