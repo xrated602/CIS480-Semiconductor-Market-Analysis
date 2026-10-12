@@ -1,0 +1,13 @@
+# Week 8 — Impact and Risk Register
+
+| ID | Impact / risk | Evidence or rationale | Likelihood | Consequence | Mitigation / decision rule | Proposed owner | Status |
+|---|---|---|---|---|---|---|---|
+| R1 | Historical results mistaken for investment predictions | Five-year descriptive market comparison | Medium | High | Explicitly label historical only; no forecasts or recommendations | Luis | Open |
+| R2 | High cumulative returns obscure volatility and drawdown | NVDA 1326.20% return, 52.22% volatility, -66.34% max drawdown (README rounded values) | Medium | High | Show return and both risk measures together | Luis | Open |
+| R3 | Broad-market benchmark interpreted as sector-matched control | SPY tracks broad US market, not semiconductor sector | Medium | Medium | State benchmark limitations on report/dashboard | Colen | Open |
+| R4 | Data revisions alter reproducibility | yfinance downloads can change after notebook execution | Medium | High | Use committed authorized snapshot, fixed commit and recorded library versions | Rey | Open |
+| R5 | Dashboard interactions differ from notebook KPIs | PBIX not independently tested for Week 8 | Unknown | High | Inspect slicers and KPI values against frozen CSV; log actual outputs | Luis | Open |
+| R6 | Live demo fails or links require sign-in | External runtime/Power BI dependencies | Medium | Medium | Prepare offline copy, backup recording, text outline and signed-out link test | Luis | Open |
+| R7 | Contribution claims lack traceable evidence | Team review required for every member | Medium | High | Require direct artifact or material revision link and member sign-off | All | Open |
+
+**Impact interpretation:** The dashboard helps a hypothetical analyst compare historical risk and performance using consistent measures. No real stakeholder adoption, investment outcome, or predictive accuracy is claimed.
