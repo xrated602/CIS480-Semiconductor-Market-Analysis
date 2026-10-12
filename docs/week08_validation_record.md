@@ -60,3 +60,17 @@
 **User-reported actual result:** Luis confirmed all six securities (AMD, AVGO, INTC, NVDA, TSM, SPY) appear and all three KPI visuals display values, in addition to the prior confirmation that the dashboard loads and filters respond.
 
 **Status:** PASS for user-reported dashboard display and interaction smoke test. **Pending:** independently compare dashboard figures for cumulative return, annualized volatility, and maximum drawdown against the frozen KPI summary CSV, and attach inspectable screenshot/recording evidence. No claim of numerical reconciliation or independent PBIX inspection is made.
+
+### W08-04 NVDA KPI numeric reconciliation (2026-10-12)
+
+**Input/question:** With NVDA selected in Power BI, do the three displayed KPIs match the committed [KPI summary CSV](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/blob/main/data/processed/kpi_summary_metrics_2021_2025.csv) after rounding to two decimal percentage points?
+
+| KPI | Expected from committed CSV | Actual reported by Luis from Power BI | Status |
+|---|---:|---:|---|
+| Cumulative return | 1326.20% | 1326.20% | PASS |
+| Annualized volatility | 52.22% | 52.22% | PASS |
+| Maximum drawdown | -66.34% | -66.34% | PASS |
+
+**Decision rule:** Exact equality at two displayed decimal places. **Actual:** All three match. **Status: PASS — user-reported NVDA numerical reconciliation.**
+
+**Evidence boundary:** CSV is committed and inspectable; Power BI values were reported by the user in conversation rather than captured by an independent PBIX inspection or screenshot. Checks of the other five tickers and filter-dependent recalculation remain pending.
