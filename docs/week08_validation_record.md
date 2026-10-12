@@ -98,3 +98,15 @@
 | Maximum drawdown | -65.45% | -65.45% | PASS |
 
 **Decision rule:** Equality at two displayed decimal places. **Status: PASS — user-reported AMD numerical reconciliation.** CSV evidence is inspectable; Power BI values were supplied in conversation, not independently observed. INTC, TSM and SPY and date-filter recalculation remain pending.
+
+### W08-04 INTC KPI numeric reconciliation (2026-10-12)
+
+**Input/question:** With INTC selected in Power BI, do the three displayed KPIs match the committed [KPI summary CSV](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/blob/main/data/processed/kpi_summary_metrics_2021_2025.csv) rounded to two decimal places?
+
+| KPI | Expected from committed CSV | Actual reported by Luis from Power BI | Status |
+|---|---:|---:|---|
+| Cumulative return | -17.82% | -17.82% | PASS |
+| Annualized volatility | 46.24% | 46.24% | PASS |
+| Maximum drawdown | -70.80% | -70.80% | PASS |
+
+**Decision rule:** Equality at two displayed decimal places. **Status: PASS — user-reported INTC numerical reconciliation.** CSV evidence is inspectable; Power BI values were supplied in conversation, not independently observed. TSM, SPY and date-filter recalculation remain pending. **Progress: 12/18 security-KPI combinations reconciled.**
