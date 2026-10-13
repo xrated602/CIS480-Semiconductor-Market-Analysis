@@ -254,3 +254,7 @@ User reported uploading the saved, freshly executed `notebooks/CIS480_Final_Mast
 ### W08-24 Signed-out master notebook viewing (2026-10-12)
 
 **Input/question:** Can a reviewer view the [final master Jupyter notebook](../notebooks/CIS480_Final_Master_Analysis.ipynb) without signing into GitHub? **Expected:** The notebook page is viewable in a signed-out/private browser session. **Actual:** Luis reported **Yes** after being asked to open the notebook while still in Incognito mode. **Status: PASS (user-reported signed-out notebook page access).** **Evidence:** [Final master notebook](../notebooks/CIS480_Final_Master_Analysis.ipynb) and this dated test statement. **Limitation:** This verifies viewing the notebook page, not independently downloading/running it or access to all other evidence files.
+
+### W08-25 Signed-out KPI summary CSV access (2026-10-12)
+
+**Input/question:** Can a reviewer view the [processed KPI summary CSV](../data/processed/kpi_summary_metrics_2021_2025.csv) without signing into GitHub? **Expected:** CSV data is visible in a signed-out/private browser session. **Actual:** Luis reported **Yes** when asked to open the CSV in Incognito mode. **Status: PASS (user-reported signed-out CSV viewing).** **Evidence:** [Processed KPI summary CSV](../data/processed/kpi_summary_metrics_2021_2025.csv) and this dated record. **Limitation:** Does not confirm access to the cleaned-data CSV, PBIX download, or all other linked evidence.
