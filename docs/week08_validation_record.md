@@ -262,3 +262,7 @@ User reported uploading the saved, freshly executed `notebooks/CIS480_Final_Mast
 ### W08-26 Signed-out cleaned market data CSV access (2026-10-12)
 
 **Input/question:** Can a reviewer view the [cleaned market data CSV](../data/processed/cleaned_market_data_2021_2025.csv) without signing into GitHub? **Expected:** CSV data visible in a signed-out/private browser session. **Actual:** Luis reported **Yes** while checking the CSV in Incognito mode. **Status: PASS (user-reported signed-out viewing).** **Evidence:** [Cleaned market data CSV](../data/processed/cleaned_market_data_2021_2025.csv) and this dated record. **Limitation:** Does not establish that the PBIX download or remaining links are publicly accessible.
+
+### W08-27 Signed-out Power BI dashboard download option (2026-10-12)
+
+**Input/question:** Can a reviewer access the [Power BI dashboard PBIX GitHub page](../powerbi/CIS480_Semiconductor_Market_Performance_Dashboard.pbix) and see its download option without signing into GitHub? **Expected:** Public PBIX file page and download option available to signed-out visitors. **Actual:** Luis reported **Yes** after testing in Incognito mode. **Status: PASS (user-reported signed-out page and download-option access).** **Evidence:** [Power BI PBIX file](../powerbi/CIS480_Semiconductor_Market_Performance_Dashboard.pbix) and this dated record. **Limitation:** Download completion and opening the PBIX in Power BI Desktop have not been independently verified by this test.
