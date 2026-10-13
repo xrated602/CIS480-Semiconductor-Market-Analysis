@@ -216,3 +216,7 @@ Power BI selection: INTC, 2024-01-01 through 2024-12-31. User-reported maximum d
 ### W08-15 TSM 2024 cumulative return (2026-10-12)
 
 Power BI selection: TSM (Taiwan Semiconductor), 2024-01-01 through 2024-12-31. User-reported cumulative return: 97.27%. Independent reference: saved Week 7 notebook's 2024 within-year adjusted-close return for TSM: 97.27%. Acceptance: agreement to two displayed decimal places. Status: PASS. TSM 2024 annualized volatility and maximum drawdown remain pending.
+
+### W08-16 TSM 2024 annualized volatility (2026-10-12)
+
+Power BI selection: TSM, 2024-01-01 through 2024-12-31. User-reported annualized volatility: 40.50%. Independent calculation using the uploaded cleaned market CSV: 252 TSM 2024 Daily_Return observations; sample standard deviation (ddof=1) multiplied by sqrt(252) = 40.49505734357134%. Acceptance: matches to two displayed decimal places. Status: PASS. TSM 2024 maximum drawdown remains pending.
