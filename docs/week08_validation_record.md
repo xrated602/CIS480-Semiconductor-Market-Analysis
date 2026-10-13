@@ -176,3 +176,7 @@ Luis clarified that the previously reported 198.86% was a **typing error**. The 
 | Maximum Drawdown | -27.05% | -27.0467681658% | PASS |
 
 **Method:** Cumulative return = last 2024 adjusted close / first 2024 adjusted close - 1. Volatility = sample standard deviation of all 252 saved `Daily_Return` values for NVDA in 2024 times sqrt(252); this includes the January 2 return relative to the preceding trading day in 2023. Drawdown = minimum of (2024 adjusted close / cumulative maximum adjusted close *within the 2024 window* - 1). The independently recomputed 2024 maximum drawdown also equals the minimum saved `Drawdown` within that window. **Acceptance:** agreement to 2 displayed decimal places. **Outcome:** All 3 PASS. **Scope:** These are user-reported Power BI visual readings reconciled against an independently computed CSV result, not direct inspection of the PBIX. Other tickers' date-filtered calculations and fresh pipeline execution remain untested.
+
+### W08-06 2024 AMD ticker-selection cumulative-return check (2026-10-12)
+
+**Filter:** 2024-01-01 through 2024-12-31; switched ticker selection from NVDA to AMD. **Power BI:** user reported **-12.84%** cumulative return. **Independent reference:** saved Week 7 notebook `week7_annual` 2024 within-year return for AMD **-12.84%**, based on first and last 2024 adjusted closes. **Acceptance:** matches to two displayed decimal places. **Status: PASS (user-reported visual vs saved notebook).** This does not independently validate AMD's 2024 volatility or maximum drawdown.
