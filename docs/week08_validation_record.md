@@ -196,3 +196,7 @@ Power BI selection: AVGO (Broadcom), date range 2024-01-01 through 2024-12-31. U
 ### W08-10 AVGO 2024 annualized volatility (2026-10-12)
 
 Power BI: AVGO selected, 2024-01-01 through 2024-12-31. User-reported annualized volatility: 53.92%. Independent calculation from 252 AVGO 2024 Daily_Return observations in uploaded cleaned market CSV: sample standard deviation times square root of 252 = 53.91512879899315%. Agreement to two displayed decimal places: PASS. AVGO 2024 maximum drawdown remains pending.
+
+### W08-11 AVGO 2024 maximum drawdown (2026-10-12)
+
+Power BI selection: AVGO, 2024-01-01 through 2024-12-31. User-reported maximum drawdown: -25.25%. Independently recalculated from 252 AVGO adjusted-close observations in uploaded cleaned market data: minimum of (adjusted close / running 2024 maximum adjusted close - 1) = -25.2529135579%. Matches to two displayed decimal places: PASS. All three AVGO 2024 KPI comparisons now pass. Power BI readings remain user-reported rather than direct PBIX inspection.
