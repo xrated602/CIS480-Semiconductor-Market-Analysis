@@ -25,7 +25,7 @@ The project is descriptive, not a prediction or investment recommendation.
 | Owner, task, status, dependency, acceptance criteria and contribution evidence | [Work plan and contribution record](week08_work_plan_contribution_record.md) | Updated; teammate evidence pending |
 | Accessible text alternative to demonstration | [Demo outline and readiness checklist](week08_demo_outline.md) | Available |
 | Setup instructions and dependencies | [Project README](../README.md) and [requirements.txt](../requirements.txt) | Available; Rey's independent environment check pending |
-| Presentation and backup recording | M08 team presentation with speaker notes prepared outside this repository; final artifact link and accessible recording/transcript to be added | Pending final upload/link and recording |
+| Presentation and backup recording | [M08 team PowerPoint presentation](CIS480_M08_Demo_Day_Team_Presentation.pptx) uploaded to `docs/`; accessible backup recording/transcript to be added | Presentation uploaded and repository file verified; backup recording pending |
 | Frozen demo version | Reviewed commit SHA or tag to be linked here | Pending |
 | Signed-out links, secrets scan and accessibility inspection | Dated final verification results to be added to [validation record](week08_validation_record.md) | Pending |
 | Each member's final approval and contribution evidence | [Work plan and contribution record](week08_work_plan_contribution_record.md) and signed GitHub review comments | Pending |
@@ -52,7 +52,7 @@ See [Section 6](week08_section6_solution_interpretation.md) for exact metrics, d
 6. Show the dated validation evidence, limitations and risk mitigations.
 7. Identify the next handoff: independently reviewed, reproducible and accessible final package.
 
-[Readable demonstration outline](week08_demo_outline.md). The team must attach an accessible presentation and backup recording or approved equivalent with captions or a text alternative **before claiming demo readiness**.
+[Readable demonstration outline](week08_demo_outline.md) and [M08 team PowerPoint presentation](CIS480_M08_Demo_Day_Team_Presentation.pptx). The PowerPoint file has been verified in the repository, but the team must still provide an accessible backup recording or approved equivalent with captions or a text alternative **before claiming demo readiness**.
 
 ## Final submission checklist
 
@@ -61,7 +61,7 @@ See [Section 6](week08_section6_solution_interpretation.md) for exact metrics, d
 - [ ] Luis, Rey and Colen each reviewed the complete final package and confirmed their contributions.
 - [ ] Exact approved demo commit SHA or tag recorded here.
 - [ ] Authorized input, expected and actual outputs, and dependency versions verified.
-- [ ] Accessible presentation and demo backup linked, with captions or equivalent text explanation.
+- [ ] Presentation [uploaded](CIS480_M08_Demo_Day_Team_Presentation.pptx); signed-out access and accessible backup recording or approved equivalent still to be verified.
 - [ ] Every public evidence link opened and verified while signed out.
 - [ ] Credentials, private contacts, restricted information and personal data checked.
 - [ ] Sources, AI assistance, verification and material revisions disclosed.
