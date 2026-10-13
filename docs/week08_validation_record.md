@@ -204,3 +204,7 @@ Power BI selection: AVGO, 2024-01-01 through 2024-12-31. User-reported maximum d
 ### W08-12 INTC 2024 cumulative return (2026-10-12)
 
 Power BI selection: INTC (Intel), date range 2024-01-01 through 2024-12-31. User-reported cumulative return: -57.49%. Reference: saved Week 7 notebook's 2024 within-year adjusted-close return for INTC: -57.49%. Acceptance: agreement to two displayed decimal places. Status: PASS. INTC 2024 volatility and maximum drawdown remain pending.
+
+### W08-13 INTC 2024 annualized volatility (2026-10-12)
+
+Power BI selection: INTC, 2024-01-01 through 2024-12-31. User-reported annualized volatility: 51.18%. Independently recalculated from 252 INTC 2024 Daily_Return rows in user-uploaded cleaned market CSV: sample standard deviation times square root of 252 = 51.17681454796064%. Acceptance: agreement to two displayed decimal places. Status: PASS. INTC 2024 maximum drawdown remains pending.
