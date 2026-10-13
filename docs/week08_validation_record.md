@@ -148,3 +148,13 @@ Luis clarified that the previously reported 198.86% was a **typing error**. The 
 **Decision rule:** Exact match to two displayed decimal places. **Status: PASS — user-reported SPY numerical reconciliation.**
 
 **Aggregate status:** 18/18 full-period, two-decimal KPI comparisons passed across AMD, AVGO, INTC, NVDA, TSM and SPY. The results were supplied by Luis from Power BI and compared to committed CSV values; no screenshot or independent PBIX execution was obtained. Date-filtered KPI behavior, fresh frozen-input notebook execution, signed-out access, and team approvals remain pending. This is a PASS for full-period user-reported visual-to-CSV numeric agreement only, not complete Week 8 demo acceptance.
+
+### W08-04 date-slicer interaction check (2026-10-12)
+
+**Input/question:** After clearing individual stock selection and changing the date slicer from the full 2021–2025 window to 2024 only, do cumulative return, annualized volatility, and maximum drawdown visuals respond?
+
+**Expected:** All three KPI visuals update when the date window changes.
+
+**Actual:** Luis reported “They all update.” **Status: PASS — user-reported date-filter responsiveness.**
+
+**Evidence boundary:** This confirms visible interaction, not that each metric is mathematically recomputed with a correct 2024-only denominator or rolling/peak reset. Numeric 2024-specific cross-check against a separate filtered calculation remains pending, as does screenshot/recording evidence.
