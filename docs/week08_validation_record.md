@@ -208,3 +208,7 @@ Power BI selection: INTC (Intel), date range 2024-01-01 through 2024-12-31. User
 ### W08-13 INTC 2024 annualized volatility (2026-10-12)
 
 Power BI selection: INTC, 2024-01-01 through 2024-12-31. User-reported annualized volatility: 51.18%. Independently recalculated from 252 INTC 2024 Daily_Return rows in user-uploaded cleaned market CSV: sample standard deviation times square root of 252 = 51.17681454796064%. Acceptance: agreement to two displayed decimal places. Status: PASS. INTC 2024 maximum drawdown remains pending.
+
+### W08-14 INTC 2024 maximum drawdown (2026-10-12)
+
+Power BI selection: INTC, 2024-01-01 through 2024-12-31. User-reported maximum drawdown: -61.37%. Independent calculation from the uploaded cleaned market CSV, 252 INTC adjusted closing prices during 2024: minimum of (adjusted close / cumulative maximum adjusted close reset within 2024 - 1) = -61.3663180515%. Acceptance: matches to two displayed decimal places. Status: PASS. Important: the precomputed full-history Drawdown column has a different minimum (-69.5732%) in this window because its peak is anchored to the entire history; use the window-reset drawdown for this comparison. All three INTC 2024 KPI comparisons now pass.
