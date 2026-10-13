@@ -192,3 +192,7 @@ AMD, 2024-01-01 through 2024-12-31. Power BI user-reported: -43.76%. Independent
 ### W08-09 AVGO 2024 cumulative return (2026-10-12)
 
 Power BI selection: AVGO (Broadcom), date range 2024-01-01 through 2024-12-31. User-reported cumulative return: 116.48%. Reference: saved Week 7 notebook's within-year adjusted-close return for AVGO in 2024: 116.48%. Acceptance: matches to two decimal places. Status: PASS. Volatility and maximum drawdown for AVGO in 2024 remain untested.
+
+### W08-10 AVGO 2024 annualized volatility (2026-10-12)
+
+Power BI: AVGO selected, 2024-01-01 through 2024-12-31. User-reported annualized volatility: 53.92%. Independent calculation from 252 AVGO 2024 Daily_Return observations in uploaded cleaned market CSV: sample standard deviation times square root of 252 = 53.91512879899315%. Agreement to two displayed decimal places: PASS. AVGO 2024 maximum drawdown remains pending.
