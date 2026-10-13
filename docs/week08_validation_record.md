@@ -220,3 +220,7 @@ Power BI selection: TSM (Taiwan Semiconductor), 2024-01-01 through 2024-12-31. U
 ### W08-16 TSM 2024 annualized volatility (2026-10-12)
 
 Power BI selection: TSM, 2024-01-01 through 2024-12-31. User-reported annualized volatility: 40.50%. Independent calculation using the uploaded cleaned market CSV: 252 TSM 2024 Daily_Return observations; sample standard deviation (ddof=1) multiplied by sqrt(252) = 40.49505734357134%. Acceptance: matches to two displayed decimal places. Status: PASS. TSM 2024 maximum drawdown remains pending.
+
+### W08-17 TSM 2024 maximum drawdown (2026-10-12)
+
+Power BI: TSM selected, date slicer 2024-01-01 through 2024-12-31. User-reported maximum drawdown: -22.56%. Independent calculation from 252 TSM 2024 adjusted-close observations in the uploaded cleaned market CSV: minimum of (adjusted close / cumulative running maximum of adjusted close within 2024 - 1) = -22.559547444840554%. Agreement to two displayed decimal places: PASS. All three 2024 KPI comparisons for TSM now pass. All five semiconductor tickers (AMD, AVGO, INTC, NVDA, TSM) have now passed their three 2024 filtered KPI comparisons; SPY 2024 remains to be tested separately.
