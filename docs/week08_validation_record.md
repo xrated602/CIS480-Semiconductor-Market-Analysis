@@ -250,3 +250,7 @@ User reported uploading the saved, freshly executed `notebooks/CIS480_Final_Mast
 ### W08-23 Signed-out submission landing page access (2026-10-12)
 
 **Input/question:** Can a reviewer open the [Week 8 submission landing page](week08_submission_package.md) without being signed in to GitHub? **Expected:** The page is readable in a signed-out/private browser session without authentication. **Actual:** Luis reported testing the link in an Incognito window and answered **Yes**, it opened. **Status: PASS (user-reported signed-out access for the landing page only).** **Evidence:** [Week 8 submission package](week08_submission_package.md) and this dated test statement. **Limitation:** This does not verify that every linked notebook, CSV, PBIX download, or other artifact is accessible without signing in. Those links require separate checks.
+
+### W08-24 Signed-out master notebook viewing (2026-10-12)
+
+**Input/question:** Can a reviewer view the [final master Jupyter notebook](../notebooks/CIS480_Final_Master_Analysis.ipynb) without signing into GitHub? **Expected:** The notebook page is viewable in a signed-out/private browser session. **Actual:** Luis reported **Yes** after being asked to open the notebook while still in Incognito mode. **Status: PASS (user-reported signed-out notebook page access).** **Evidence:** [Final master notebook](../notebooks/CIS480_Final_Master_Analysis.ipynb) and this dated test statement. **Limitation:** This verifies viewing the notebook page, not independently downloading/running it or access to all other evidence files.
