@@ -18,3 +18,14 @@ The owner assignments below follow documented project responsibilities. **They a
 - Analyze **AMD, AVGO, INTC, NVDA, TSM** against SPY over **2021–2025**.
 - Do not freeze a demo tag before final files and tests are reviewed.
 - Do not mark reviews complete on behalf of teammates without their confirmation.
+
+## Assignment coordination update — 2026-10-12
+
+Luis reported emailing Rey and Colen their separate Week 8 assignments. These are requests for review, **not completed teammate contributions**.
+
+- **Luis:** Completed user-reported Power BI visual testing (36 full-period and 2024 KPI comparisons), fresh local Jupyter master-notebook execution, uploaded executed notebook, and coordinated the independent review requests. Continue Section 6 integration, final demo evidence, link/security checks and submission.
+- **Rey:** Requested to independently restart and run the master Python notebook, check data loading, methodology, dependencies, README/setup, repository structure, Week 8 documentation, and Python demo explanation. Requested a result summary and screenshot if possible by October 16. **Awaiting confirmation and evidence.**
+- **Colen:** Requested to independently open/test the PBIX dashboard, verify all six tickers, slicers, KPI behavior and usability, review Week 8 documentation and findings, and prepare Power BI demo explanation. Requested a result summary and screenshot if possible by October 16. **Awaiting confirmation and evidence.**
+- **All:** Final review and demo rehearsal remain pending. Do not attribute a completed review to Rey or Colen until their actual feedback is received.
+
+The original planning table above reflects earlier proposed assignments; this dated update records the latest requests.
