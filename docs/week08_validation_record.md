@@ -180,3 +180,7 @@ Luis clarified that the previously reported 198.86% was a **typing error**. The 
 ### W08-06 2024 AMD ticker-selection cumulative-return check (2026-10-12)
 
 **Filter:** 2024-01-01 through 2024-12-31; switched ticker selection from NVDA to AMD. **Power BI:** user reported **-12.84%** cumulative return. **Independent reference:** saved Week 7 notebook `week7_annual` 2024 within-year return for AMD **-12.84%**, based on first and last 2024 adjusted closes. **Acceptance:** matches to two displayed decimal places. **Status: PASS (user-reported visual vs saved notebook).** This does not independently validate AMD's 2024 volatility or maximum drawdown.
+
+### W08-07 2024 AMD annualized-volatility check (2026-10-12)
+
+**Filter:** AMD, 2024-01-01 to 2024-12-31. **Power BI (user-reported):** 47.88%. **Independent calculation:** 47.8791324062%, from 252 AMD daily-return rows in user-uploaded `cleaned_market_data_2021_2025(8).csv`, using sample standard deviation of `Daily_Return` times sqrt(252). **Acceptance:** matches to two decimal places. **Status: PASS.** AMD 2024 maximum drawdown remains to be checked.
