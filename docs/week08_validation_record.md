@@ -232,3 +232,9 @@ Power BI selection: SPY benchmark, 2024-01-01 through 2024-12-31. User-reported 
 ### W08-19 SPY 2024 annualized volatility (2026-10-12)
 
 Power BI selection: SPY, date range 2024-01-01 through 2024-12-31. User-reported annualized volatility: 12.57%. Independent computation using 252 SPY Daily_Return observations in the user-uploaded cleaned market CSV: sample standard deviation (ddof=1) times sqrt(252) = 12.568977829844236%. Acceptance: matches to two displayed decimal places. Status: PASS. SPY 2024 maximum drawdown remains pending.
+
+### W08-20 SPY 2024 maximum drawdown and six-ticker completion (2026-10-12)
+
+Power BI selection: SPY benchmark, date range 2024-01-01 through 2024-12-31. User-reported maximum drawdown: -8.41%. Independent calculation from the uploaded `cleaned_market_data_2021_2025(8).csv`: 252 SPY adjusted-close rows for 2024; minimum of (adjusted close / running maximum adjusted close *within 2024* - 1) = -8.405618253124114%, reached on 2024-08-05. Agreement to two displayed decimal places: PASS. All three SPY 2024 KPI checks now pass.
+
+**2024 date-filtered KPI milestone:** All 18 comparisons (6 tickers AMD, AVGO, INTC, NVDA, TSM, SPY times 3 metrics: cumulative return, annualized volatility, maximum drawdown) passed to two displayed decimal places, comparing user-reported Power BI values to saved notebook or independently calculated uploaded CSV values. The 18 full-period KPI comparisons also previously passed. These tests do not constitute fresh end-to-end notebook execution or direct inspection of the PBIX file.
