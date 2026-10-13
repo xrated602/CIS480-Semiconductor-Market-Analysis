@@ -212,3 +212,7 @@ Power BI selection: INTC, 2024-01-01 through 2024-12-31. User-reported annualize
 ### W08-14 INTC 2024 maximum drawdown (2026-10-12)
 
 Power BI selection: INTC, 2024-01-01 through 2024-12-31. User-reported maximum drawdown: -61.37%. Independent calculation from the uploaded cleaned market CSV, 252 INTC adjusted closing prices during 2024: minimum of (adjusted close / cumulative maximum adjusted close reset within 2024 - 1) = -61.3663180515%. Acceptance: matches to two displayed decimal places. Status: PASS. Important: the precomputed full-history Drawdown column has a different minimum (-69.5732%) in this window because its peak is anchored to the entire history; use the window-reset drawdown for this comparison. All three INTC 2024 KPI comparisons now pass.
+
+### W08-15 TSM 2024 cumulative return (2026-10-12)
+
+Power BI selection: TSM (Taiwan Semiconductor), 2024-01-01 through 2024-12-31. User-reported cumulative return: 97.27%. Independent reference: saved Week 7 notebook's 2024 within-year adjusted-close return for TSM: 97.27%. Acceptance: agreement to two displayed decimal places. Status: PASS. TSM 2024 annualized volatility and maximum drawdown remain pending.
