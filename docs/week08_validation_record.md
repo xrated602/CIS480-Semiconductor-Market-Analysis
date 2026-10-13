@@ -224,3 +224,7 @@ Power BI selection: TSM, 2024-01-01 through 2024-12-31. User-reported annualized
 ### W08-17 TSM 2024 maximum drawdown (2026-10-12)
 
 Power BI: TSM selected, date slicer 2024-01-01 through 2024-12-31. User-reported maximum drawdown: -22.56%. Independent calculation from 252 TSM 2024 adjusted-close observations in the uploaded cleaned market CSV: minimum of (adjusted close / cumulative running maximum of adjusted close within 2024 - 1) = -22.559547444840554%. Agreement to two displayed decimal places: PASS. All three 2024 KPI comparisons for TSM now pass. All five semiconductor tickers (AMD, AVGO, INTC, NVDA, TSM) have now passed their three 2024 filtered KPI comparisons; SPY 2024 remains to be tested separately.
+
+### W08-18 SPY 2024 cumulative return (2026-10-12)
+
+Power BI selection: SPY benchmark, 2024-01-01 through 2024-12-31. User-reported cumulative return: 25.59%. Independent reference: saved Week 7 notebook's within-year adjusted-close return for SPY in 2024: 25.59%. Acceptance: agreement to two displayed decimal places. Status: PASS. SPY 2024 annualized volatility and maximum drawdown remain pending.
