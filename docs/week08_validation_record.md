@@ -200,3 +200,7 @@ Power BI: AVGO selected, 2024-01-01 through 2024-12-31. User-reported annualized
 ### W08-11 AVGO 2024 maximum drawdown (2026-10-12)
 
 Power BI selection: AVGO, 2024-01-01 through 2024-12-31. User-reported maximum drawdown: -25.25%. Independently recalculated from 252 AVGO adjusted-close observations in uploaded cleaned market data: minimum of (adjusted close / running 2024 maximum adjusted close - 1) = -25.2529135579%. Matches to two displayed decimal places: PASS. All three AVGO 2024 KPI comparisons now pass. Power BI readings remain user-reported rather than direct PBIX inspection.
+
+### W08-12 INTC 2024 cumulative return (2026-10-12)
+
+Power BI selection: INTC (Intel), date range 2024-01-01 through 2024-12-31. User-reported cumulative return: -57.49%. Reference: saved Week 7 notebook's 2024 within-year adjusted-close return for INTC: -57.49%. Acceptance: agreement to two displayed decimal places. Status: PASS. INTC 2024 volatility and maximum drawdown remain pending.
