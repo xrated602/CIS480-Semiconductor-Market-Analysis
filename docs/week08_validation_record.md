@@ -228,3 +228,7 @@ Power BI: TSM selected, date slicer 2024-01-01 through 2024-12-31. User-reported
 ### W08-18 SPY 2024 cumulative return (2026-10-12)
 
 Power BI selection: SPY benchmark, 2024-01-01 through 2024-12-31. User-reported cumulative return: 25.59%. Independent reference: saved Week 7 notebook's within-year adjusted-close return for SPY in 2024: 25.59%. Acceptance: agreement to two displayed decimal places. Status: PASS. SPY 2024 annualized volatility and maximum drawdown remain pending.
+
+### W08-19 SPY 2024 annualized volatility (2026-10-12)
+
+Power BI selection: SPY, date range 2024-01-01 through 2024-12-31. User-reported annualized volatility: 12.57%. Independent computation using 252 SPY Daily_Return observations in the user-uploaded cleaned market CSV: sample standard deviation (ddof=1) times sqrt(252) = 12.568977829844236%. Acceptance: matches to two displayed decimal places. Status: PASS. SPY 2024 maximum drawdown remains pending.
