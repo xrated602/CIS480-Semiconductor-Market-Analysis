@@ -188,3 +188,7 @@ Luis clarified that the previously reported 198.86% was a **typing error**. The 
 ### W08-08 AMD 2024 drawdown (2026-10-12)
 
 AMD, 2024-01-01 through 2024-12-31. Power BI user-reported: -43.76%. Independently recalculated from 252 AMD adjusted closing prices in the uploaded cleaned market CSV: -43.7600555836%, using the minimum of (adjusted close / running peak within 2024 - 1). PASS at two decimal places. All three AMD 2024 KPI comparisons now pass. Dashboard readings are user-reported.
+
+### W08-09 AVGO 2024 cumulative return (2026-10-12)
+
+Power BI selection: AVGO (Broadcom), date range 2024-01-01 through 2024-12-31. User-reported cumulative return: 116.48%. Reference: saved Week 7 notebook's within-year adjusted-close return for AVGO in 2024: 116.48%. Acceptance: matches to two decimal places. Status: PASS. Volatility and maximum drawdown for AVGO in 2024 remain untested.
