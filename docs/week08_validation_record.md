@@ -164,3 +164,15 @@ Luis clarified that the previously reported 198.86% was a **typing error**. The 
 **Input:** Power BI date slicer 2024-01-01 through 2024-12-31, NVIDIA (NVDA) selected. **Expected:** 178.87% from the saved [Week 7 notebook calendar-year sensitivity table](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/blob/main/notebooks/CIS480_Final_Master_Analysis_W07.ipynb), computed as the last 2024 adjusted closing price divided by the first 2024 adjusted closing price, minus one. **Actual:** Luis reported **178.87%** for NVIDIA with that date range. **Decision rule:** Equal to two displayed decimal places. **Status: PASS — user-reported filtered NVDA cumulative-return agreement.**
 
 **Clarification:** A previous 25.59% report matches the notebook's 2024 SPY result, not NVDA; after revisiting the selection, Luis explicitly confirmed NVDA = 178.87%. The initial ambiguous observation is superseded for this test. The specific cause of the earlier 25.59% report was not established. This check does not validate date-filtered volatility or maximum drawdown.
+
+### W08-05 2024 NVDA volatility and maximum drawdown independently verified (2026-10-12)
+
+**Evidence:** User-uploaded `cleaned_market_data_2021_2025(8).csv`, 7,530 rows, 14 columns; 252 NVDA trading-date rows from 2024-01-02 to 2024-12-31. Compared to user-reported Power BI slicer selection NVDA, 2024-01-01 through 2024-12-31.
+
+| KPI | Power BI (user-reported) | Independent CSV calculation | Status |
+|---|---:|---:|---|
+| Cumulative Return | 178.87% | 178.8740902933% | PASS |
+| Annualized Volatility | 52.50% | 52.5033157950% | PASS |
+| Maximum Drawdown | -27.05% | -27.0467681658% | PASS |
+
+**Method:** Cumulative return = last 2024 adjusted close / first 2024 adjusted close - 1. Volatility = sample standard deviation of all 252 saved `Daily_Return` values for NVDA in 2024 times sqrt(252); this includes the January 2 return relative to the preceding trading day in 2023. Drawdown = minimum of (2024 adjusted close / cumulative maximum adjusted close *within the 2024 window* - 1). The independently recomputed 2024 maximum drawdown also equals the minimum saved `Drawdown` within that window. **Acceptance:** agreement to 2 displayed decimal places. **Outcome:** All 3 PASS. **Scope:** These are user-reported Power BI visual readings reconciled against an independently computed CSV result, not direct inspection of the PBIX. Other tickers' date-filtered calculations and fresh pipeline execution remain untested.
