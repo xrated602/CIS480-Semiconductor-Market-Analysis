@@ -158,3 +158,9 @@ Luis clarified that the previously reported 198.86% was a **typing error**. The 
 **Actual:** Luis reported “They all update.” **Status: PASS — user-reported date-filter responsiveness.**
 
 **Evidence boundary:** This confirms visible interaction, not that each metric is mathematically recomputed with a correct 2024-only denominator or rolling/peak reset. Numeric 2024-specific cross-check against a separate filtered calculation remains pending, as does screenshot/recording evidence.
+
+### W08-04 2024 date-filtered NVDA return reconciliation (2026-10-12)
+
+**Input:** Power BI date slicer 2024-01-01 through 2024-12-31, NVIDIA (NVDA) selected. **Expected:** 178.87% from the saved [Week 7 notebook calendar-year sensitivity table](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/blob/main/notebooks/CIS480_Final_Master_Analysis_W07.ipynb), computed as the last 2024 adjusted closing price divided by the first 2024 adjusted closing price, minus one. **Actual:** Luis reported **178.87%** for NVIDIA with that date range. **Decision rule:** Equal to two displayed decimal places. **Status: PASS — user-reported filtered NVDA cumulative-return agreement.**
+
+**Clarification:** A previous 25.59% report matches the notebook's 2024 SPY result, not NVDA; after revisiting the selection, Luis explicitly confirmed NVDA = 178.87%. The initial ambiguous observation is superseded for this test. The specific cause of the earlier 25.59% report was not established. This check does not validate date-filtered volatility or maximum drawdown.
