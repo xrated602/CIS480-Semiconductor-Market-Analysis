@@ -258,3 +258,7 @@ User reported uploading the saved, freshly executed `notebooks/CIS480_Final_Mast
 ### W08-25 Signed-out KPI summary CSV access (2026-10-12)
 
 **Input/question:** Can a reviewer view the [processed KPI summary CSV](../data/processed/kpi_summary_metrics_2021_2025.csv) without signing into GitHub? **Expected:** CSV data is visible in a signed-out/private browser session. **Actual:** Luis reported **Yes** when asked to open the CSV in Incognito mode. **Status: PASS (user-reported signed-out CSV viewing).** **Evidence:** [Processed KPI summary CSV](../data/processed/kpi_summary_metrics_2021_2025.csv) and this dated record. **Limitation:** Does not confirm access to the cleaned-data CSV, PBIX download, or all other linked evidence.
+
+### W08-26 Signed-out cleaned market data CSV access (2026-10-12)
+
+**Input/question:** Can a reviewer view the [cleaned market data CSV](../data/processed/cleaned_market_data_2021_2025.csv) without signing into GitHub? **Expected:** CSV data visible in a signed-out/private browser session. **Actual:** Luis reported **Yes** while checking the CSV in Incognito mode. **Status: PASS (user-reported signed-out viewing).** **Evidence:** [Cleaned market data CSV](../data/processed/cleaned_market_data_2021_2025.csv) and this dated record. **Limitation:** Does not establish that the PBIX download or remaining links are publicly accessible.
