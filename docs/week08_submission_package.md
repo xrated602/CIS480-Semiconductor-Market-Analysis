@@ -71,3 +71,11 @@ See [Section 6](week08_section6_solution_interpretation.md) for exact metrics, d
 ## Sources, AI use and integrity
 
 The [Section 6 report](week08_section6_solution_interpretation.md) includes project sources, verification boundaries and the ChatGPT AI-use disclosure. This landing page was drafted with ChatGPT to organize existing GitHub evidence and rubric requirements. It does not certify that outstanding tests or checks occurred. Team members must review, revise, and verify its claims and links before submitting.
+
+## Team evidence update — October 13, 2026
+
+**Rey's assigned Week 8 independent notebook and documentation review: COMPLETE, supported by his emailed PDF.** He reports successful master-notebook runs in Google Colab and Anaconda Jupyter, no missing dependencies or runtime errors, successful file exports, sufficient setup instructions, and review of methodology, Week 8 records and demo outline with no corrections. [Read the dated contribution and test summary](week08_rey_independent_review_2026-10-13.md). This supersedes the earlier *Rey review pending* statements above.
+
+**Evidence still needed:** The original three-page PDF with screenshots is held by Luis and has **not** been uploaded here; attach it to this package or Canvas after checking for private data. Colen's independent PBIX review, each member's final approval of the *complete* package, frozen demo commit/tag, accessible backup, and remaining signed-out/security checks are **not** established by Rey's review. Do not mark the overall team submission ready yet.
+
+**AI-use revision:** ChatGPT structured Rey's emailed review into the linked summary and these status updates on October 13; claims remain attributed to Rey rather than presented as tests performed by ChatGPT.
