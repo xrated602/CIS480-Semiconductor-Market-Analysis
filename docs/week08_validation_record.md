@@ -282,3 +282,13 @@ User reported uploading the saved, freshly executed `notebooks/CIS480_Final_Mast
 ### W08-31 Downloaded M08 PowerPoint opens with speaker notes (2026-10-12)
 
 **Input/question:** Does the publicly downloaded [M08 team presentation](CIS480_M08_Demo_Day_Team_Presentation.pptx) open in PowerPoint with slides and speaker notes visible? **Expected:** Presentation opens and speaker notes can be viewed. **Actual:** Luis answered **Yes** after being asked to open the downloaded presentation and check the slides and notes. **Status: PASS (user-reported local opening and speaker-note visibility).** **Evidence:** [M08 team PowerPoint](CIS480_M08_Demo_Day_Team_Presentation.pptx) and this dated test statement. **Limitation:** This does not establish that a backup walkthrough recording has been created, or that every team member has approved the presentation.
+
+## W08-10 — Rey's independent notebook and documentation review (2026-10-13)
+
+**Reviewer and input:** Rey Guirette; `notebooks/CIS480_Final_Master_Analysis.ipynb` run in Google Colab and Anaconda Jupyter; README, methodology and Week 8 documentation reviewed. Source: Rey's three-page PDF emailed to Luis October 13. [Structured evidence summary](week08_rey_independent_review_2026-10-13.md).
+
+**Expected result:** Notebook runs successfully in both environments without missing dependencies, loads data, exports expected files; setup and methodology documentation are understandable.
+
+**Actual reported result:** Rey reports **PASS** in both environments, no errors or missing dependencies, and successful raw/cleaned/formatted/KPI file exports. He reports that the README and repository links are sufficient and that the methodology, risk register, validation record, work plan and demo outline need no corrections.
+
+**Status:** **PASS — teammate-reported independent execution and documentation review**. This supersedes the *not rerun for Week 8* statement in the initial W08-01 summary row **for the specific two-environment notebook smoke test**; it does not certify frozen-input deterministic reproducibility or all numeric reconciliation tests. The original PDF's screenshots show exported files, not full execution logs. **Evidence link:** [Rey's October 13 review summary](week08_rey_independent_review_2026-10-13.md). **Original PDF:** pending upload to repository or attachment to Canvas. Other outstanding acceptance checks remain pending.
