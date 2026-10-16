@@ -376,3 +376,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-28 — Signed-out project README access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** Opened Project README from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** README publicly readable without credentials. **Actual:** Luis confirmed it opened without requesting login. **Status: PASS for signed-out project README access.**
+
+### W08-29 — Signed-out requirements.txt access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** Opened `requirements.txt` from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** Dependency list publicly readable without credentials. **Actual:** Luis confirmed it opened without login. **Status: PASS for signed-out requirements.txt access.**
