@@ -19,3 +19,7 @@ Colen's independent PBIX review found that ticker slicer selection does not cons
 ### R5 design clarification — 2026-10-16
 
 Luis explained that the Security slicer intentionally filters **only KPI cards**, while the Date slicer filters **KPI cards and charts**. The absence of Security-slicer filtering on charts is therefore **by design**, not a defect. The remaining risk is whether chart clicks unexpectedly blank KPI cards or prevent a selected security's metrics from displaying; test and document this separately before closing R5. Prior R5 wording treating all ticker/card interaction observations as a confirmed defect is superseded by this clarification.
+
+### R5 remediation upload — 2026-10-16
+
+Luis reports correcting chart-to-card and chart-to-chart interactions and successfully testing the local dashboard. The corrected PBIX was uploaded to the original GitHub path; repository blob SHA `0fe0e319bebc4679646c17cdee880c0df41aa189` was verified. **Status: Locally remediated; downloaded uploaded artifact and teammate regression check pending.** Do not claim Colen retested the corrected version.
