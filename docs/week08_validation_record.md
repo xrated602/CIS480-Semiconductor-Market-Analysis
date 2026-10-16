@@ -352,3 +352,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-22 — Signed-out validation-record access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** Opened Week 8 validation record from the submission package in Chrome Incognito, signed out of GitHub. **Expected:** Validation record publicly readable. **Actual:** Luis confirmed page opened without sign-in. **Status: PASS for signed-out validation-record access.**
+
+### W08-23 — Signed-out impact-risk register access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** Opened Impact-risk register from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** Register publicly readable. **Actual:** Luis confirmed the page opened without requesting login. **Status: PASS for signed-out impact-risk register access.**
