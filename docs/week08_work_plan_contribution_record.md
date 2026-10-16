@@ -43,3 +43,7 @@ The original planning table above reflects earlier proposed assignments; this da
 ### Dashboard interaction design clarification — 2026-10-16
 
 Luis confirmed that the Security slicer is intentionally scoped to the KPI cards, while the Date slicer affects both cards and charts so all six series remain available for visual comparison. This is a design choice, not a requirement to filter every visual. Update the demo explanation accordingly. Colen's separate report that conflicting chart selections can blank KPI cards still needs a focused check; final acceptance remains pending that check.
+
+### Luis Power BI interaction correction — 2026-10-16
+
+Luis adjusted chart interactions so that the Security slicer controls KPI cards only, Date controls both cards and charts, and clicking chart data does not filter KPI cards or other comparison charts. He reported successful local testing and uploaded the revised PBIX to [Power BI dashboard](../powerbi/CIS480_Semiconductor_Market_Performance_Dashboard.pbix), blob SHA `0fe0e319bebc4679646c17cdee880c0df41aa189`. **Contribution effect:** Addresses Colen's reported cross-filter/card-blanking issue while preserving all-six-security comparisons. **Remaining:** Verify the downloaded GitHub copy and obtain final team approval.
