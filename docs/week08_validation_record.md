@@ -380,3 +380,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-29 — Signed-out requirements.txt access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** Opened `requirements.txt` from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** Dependency list publicly readable without credentials. **Actual:** Luis confirmed it opened without login. **Status: PASS for signed-out requirements.txt access.**
+
+### W08-30 — Public-sharing authorization confirmation (2026-10-16)
+
+**Source:** Luis (user confirmation). **Scope:** Repository materials including datasets, notebook, and Power BI dashboard. **Result:** Luis confirmed all uploaded materials are approved for public sharing. **Status: PASS for owner-reported sharing authorization.** This is not an automated credential scan, data provenance audit, or independent authorization verification.
