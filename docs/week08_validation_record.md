@@ -324,3 +324,7 @@ Luis clarified the intended Power BI interaction model: **Date slicer filters bo
 ### W08-16 — Downloaded GitHub PBIX chart-interaction regression (2026-10-16)
 
 **Tester:** Luis (user-reported test in Power BI Desktop after downloading the PBIX from GitHub). **Setup:** Security slicer AMD; click NVIDIA separately in each of the three charts. **Expected:** KPI cards remain on AMD; the other two charts retain all six securities. **Results:** Cumulative Return — PASS; Annualized Volatility — PASS; Maximum Drawdown — PASS. In the selected chart, NVIDIA becomes the active selection, as intended. **Overall status: PASS for all three chart-interaction checks on the downloaded repository artifact.** This addresses the unexpected cross-filtering/card-blanking behavior raised in Colen's review. **Not yet verified:** Colen's independent retest of the revised PBIX and final team signoff.
+
+### Week 8 review closure decision — 2026-10-16
+
+Luis elected not to request a second review from Colen. Colen's initial independent review remains on record; Luis implemented the recommended dashboard interaction changes and completed three PASS regression tests against the downloaded GitHub PBIX. **Disposition:** Interaction issue closed based on Luis's documented remediation and validation. **Scope:** This is not a claim that Colen independently retested or signed off on the corrected PBIX. Continue with remaining Week 8 submission and demo tasks.
