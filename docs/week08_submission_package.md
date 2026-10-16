@@ -15,14 +15,14 @@ The project is descriptive, not a prediction or investment recommendation.
 
 | Requirement | Inspectable evidence | Current status |
 |---|---|---|
-| Complete Section 6 interpretation, impact, reasoning, limitations | [Section 6 working report](week08_section6_solution_interpretation.md) | Draft complete; final team approval pending |
+| Complete Section 6 interpretation, impact, reasoning, limitations | [Section 6 working report](week08_section6_solution_interpretation.md) | Draft complete; Rey and Colen reviewed final package per Luis; Luis final submission confirmation pending |
 | Executed analytical artifact | [Final master Jupyter notebook](../notebooks/CIS480_Final_Master_Analysis.ipynb) | Executed and uploaded by Luis; Rey reports successful independent reruns |
 | Authorized historical input | [Cleaned market data CSV](../data/processed/cleaned_market_data_2021_2025.csv) | Committed; independent source/access review pending |
 | Expected and actual KPI outputs | [Processed KPI summary CSV](../data/processed/kpi_summary_metrics_2021_2025.csv) | Available |
 | Working interactive MVP | [Power BI dashboard file](../powerbi/CIS480_Semiconductor_Market_Performance_Dashboard.pbix) | Corrected PBIX uploaded; Colen reviewed original and Luis verified corrected interactions |
 | Dated acceptance tests with inputs, expected/actual results, status and evidence | [Week 8 validation record](week08_validation_record.md) | 36 Luis-reported KPI comparisons and three downloaded-PBIX interaction tests passed |
 | Impact and governance risks | [Impact-risk register](week08_impact_risk_register.md) | Draft complete; final updates pending |
-| Owner, task, status, dependency, acceptance criteria and contribution evidence | [Work plan and contribution record](week08_work_plan_contribution_record.md) | Updated with Rey and Colen independent reviews and Luis remediation |
+| Owner, task, status, dependency, acceptance criteria and contribution evidence | [Work plan and contribution record](week08_work_plan_contribution_record.md) | Updated; Rey and Colen final-package reviews confirmed by Luis |
 | Accessible text alternative to demonstration | [Demo outline and readiness checklist](week08_demo_outline.md) | Available |
 | Setup instructions and dependencies | [Project README](../README.md) and [requirements.txt](../requirements.txt) | Available; Rey reports independent Colab and Anaconda runs passed |
 | Presentation and backup recording | [M08 team PowerPoint presentation](CIS480_M08_Demo_Day_Team_Presentation.pptx) uploaded to `docs/`; accessible backup recording/transcript to be added | Presentation uploaded and repository file verified; recording/equivalent requirement to be confirmed |
@@ -58,7 +58,7 @@ See [Section 6](week08_section6_solution_interpretation.md) for exact metrics, d
 
 - [x] Rey's independent notebook execution, environment/setup observations and evidence summarized in GitHub (original PDF not yet attached).
 - [x] Colen's independent Power BI review reported; Luis addressed the interaction issue and passed three downloaded-PBIX regression tests. Colen's second review was intentionally not requested.
-- [ ] Luis, Rey and Colen each reviewed the complete final package and confirmed their contributions.
+- [x] Luis confirms Rey and Colen reviewed the final Week 8 package; Luis is coordinating final verification and submission. Individual written signoffs have not been independently verified.
 - [ ] Exact approved demo commit SHA or tag recorded here.
 - [ ] Authorized input, expected and actual outputs, and dependency versions verified.
 - [ ] Presentation [uploaded](CIS480_M08_Demo_Day_Team_Presentation.pptx); signed-out access and any course-required backup recording/equivalent still to be verified.
@@ -85,3 +85,7 @@ The [Section 6 report](week08_section6_solution_interpretation.md) includes proj
 Colen completed his independent dashboard review and identified unexpected chart interactions. Luis revised the Power BI visual interactions, uploaded the corrected PBIX to the same GitHub path, downloaded that version, and tested clicking NVIDIA separately in Cumulative Return, Annualized Volatility, and Maximum Drawdown while the Security slicer remained on AMD. All three tests **PASS**: the KPI cards remain on AMD and the other comparison charts retain all six securities. See [dated validation evidence](week08_validation_record.md). Luis elected to close this finding without requesting Colen's second review; **do not imply Colen retested or signed off on the revision**.
 
 The planned submission is this GitHub demo-package URL. The presentation and text outline are linked; whether the course requires an additional backup recording/equivalent remains a separate requirement to verify against the assignment instructions. Remaining work includes final team approval, freeze/tag, complete signed-out checks, and submission.
+
+## Final-package team review confirmation — October 16, 2026
+
+Luis confirms that **Rey Guirette and Colen Wilson have both reviewed the final Week 8 submission package**. This is a team-lead-reported completion of package review, not independently inspected written signoff or a second technical retest by Colen. The corrected PBIX interaction checks were performed by Luis and are documented in the validation record. Final signed-out link checks, frozen commit/tag, and Canvas submission remain outstanding.
