@@ -332,3 +332,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-17 — Signed-out submission landing-page access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** Opened the Week 8 submission package URL in Chrome Incognito while signed out of GitHub. **Expected:** Landing page publicly visible without credentials. **Actual:** Luis confirmed the package and its links were visible. **Status: PASS for landing-page visibility.** This does not independently confirm that each linked binary artifact downloads or opens; verify those separately.
+
+### W08-18 — Signed-out Jupyter notebook access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** From the Week 8 package in Chrome Incognito, opened the Final master Jupyter notebook link without signing in to GitHub. **Expected:** Notebook publicly viewable. **Actual:** Luis confirmed GitHub displayed the notebook without requesting login. **Status: PASS for signed-out notebook visibility.** This is not a fresh notebook execution test.
