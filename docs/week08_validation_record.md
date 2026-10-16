@@ -360,3 +360,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-24 — Signed-out work plan and contribution record access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** Opened Work plan and contribution record from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** Record publicly readable. **Actual:** Luis confirmed the page opened without login. **Status: PASS for signed-out contribution-record access.**
+
+### W08-25 — Signed-out demo outline and readiness checklist access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** Opened Demo outline and readiness checklist from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** Outline publicly readable. **Actual:** Luis confirmed the page opened without login. **Status: PASS for signed-out demo-outline access.**
