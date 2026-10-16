@@ -384,3 +384,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-30 — Public-sharing authorization confirmation (2026-10-16)
 
 **Source:** Luis (user confirmation). **Scope:** Repository materials including datasets, notebook, and Power BI dashboard. **Result:** Luis confirmed all uploaded materials are approved for public sharing. **Status: PASS for owner-reported sharing authorization.** This is not an automated credential scan, data provenance audit, or independent authorization verification.
+
+### W08-31 — Signed-out final release access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** Opened GitHub release `v1.0-week8-final` in Chrome Incognito while signed out. **Expected:** Public release page accessible without credentials. **Actual:** Luis confirmed the release opened without sign-in. **Status: PASS for signed-out final release visibility.** The release points to frozen commit `9339ebb` (abbreviated, from GitHub release screen). This validation-log update occurs after the release and therefore is not included in the frozen tag.
