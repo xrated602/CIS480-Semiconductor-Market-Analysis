@@ -89,3 +89,7 @@ The planned submission is this GitHub demo-package URL. The presentation and tex
 ## Final-package team review confirmation — October 16, 2026
 
 Luis confirms that **Rey Guirette and Colen Wilson have both reviewed the final Week 8 submission package**. This is a team-lead-reported completion of package review, not independently inspected written signoff or a second technical retest by Colen. The corrected PBIX interaction checks were performed by Luis and are documented in the validation record. Final signed-out link checks, frozen commit/tag, and Canvas submission remain outstanding.
+
+## Public-access verification update — October 16, 2026
+
+Luis confirmed in Chrome Incognito, while signed out of GitHub, successful access to 13 linked resources: the submission landing page, master Jupyter notebook, corrected PBIX download, M08 PowerPoint download, Section 6 report, validation record, impact-risk register, work plan/contribution record, demo outline, cleaned market CSV, KPI summary CSV, project README, and `requirements.txt`. Each user-reported result is recorded individually in [the validation log](week08_validation_record.md), W08-17 through W08-29. **Public access PASS for these 13 links.** This does not constitute a secrets/privacy scan or final accessibility audit. Freeze/tag and Canvas submission remain pending.
