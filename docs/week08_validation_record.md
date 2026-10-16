@@ -336,3 +336,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-18 — Signed-out Jupyter notebook access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** From the Week 8 package in Chrome Incognito, opened the Final master Jupyter notebook link without signing in to GitHub. **Expected:** Notebook publicly viewable. **Actual:** Luis confirmed GitHub displayed the notebook without requesting login. **Status: PASS for signed-out notebook visibility.** This is not a fresh notebook execution test.
+
+### W08-19 — Signed-out corrected PBIX download access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** In Chrome Incognito, followed the Power BI dashboard file link from the Week 8 submission package and downloaded the PBIX without signing in. **Expected:** Public download permitted. **Actual:** Luis confirmed download without login. **Status: PASS for signed-out PBIX download.** The downloaded repository copy's visual interactions were separately tested in W08-16.
