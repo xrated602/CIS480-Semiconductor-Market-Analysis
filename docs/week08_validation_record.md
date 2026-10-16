@@ -344,3 +344,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-20 — Signed-out M08 presentation download access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** Followed the M08 team PowerPoint presentation link from the Week 8 submission package in Chrome Incognito, signed out of GitHub. **Expected:** Presentation downloadable without credentials. **Actual:** Luis confirmed successful public download. **Status: PASS for signed-out PowerPoint download.** This check does not establish accessibility or completeness of presentation content.
+
+### W08-21 — Signed-out Section 6 report access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** Opened Section 6 working report from Week 8 submission package in Chrome Incognito, signed out of GitHub. **Expected:** Report publicly readable. **Actual:** Luis confirmed report opened without requesting sign-in. **Status: PASS for signed-out Section 6 report access.**
