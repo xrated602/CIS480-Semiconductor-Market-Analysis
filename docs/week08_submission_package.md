@@ -15,7 +15,7 @@ The project is descriptive, not a prediction or investment recommendation.
 
 | Requirement | Inspectable evidence | Current status |
 |---|---|---|
-| Complete Section 6 interpretation, impact, reasoning, limitations | [Section 6 working report](week08_section6_solution_interpretation.md) | Draft complete; Rey and Colen reviewed final package per Luis; Luis final submission confirmation pending |
+| Complete Section 6 interpretation, impact, reasoning, limitations | [Approved final Section 6 Word report](CIS480_T08_Section6_Updated_Final.docx) ([earlier Markdown draft](week08_section6_solution_interpretation.md)) | Approved by Luis and uploaded October 16; final release update pending |
 | Executed analytical artifact | [Final master Jupyter notebook](../notebooks/CIS480_Final_Master_Analysis.ipynb) | Executed and uploaded by Luis; Rey reports successful independent reruns |
 | Authorized historical input | [Cleaned market data CSV](../data/processed/cleaned_market_data_2021_2025.csv) | Committed; independent source/access review pending |
 | Expected and actual KPI outputs | [Processed KPI summary CSV](../data/processed/kpi_summary_metrics_2021_2025.csv) | Available |
@@ -40,7 +40,7 @@ These observations do **not** prove that another machine can reproduce the analy
 
 The saved full-period KPI table shows NVDA and AVGO with the largest cumulative returns, while all five semiconductor securities have higher volatility and deeper maximum drawdowns than SPY. The dashboard enables comparison of historical return and risk for a hypothetical analyst. No measured real-world stakeholder adoption, financial benefit, forecast accuracy, or future investment performance is claimed.
 
-See [Section 6](week08_section6_solution_interpretation.md) for exact metrics, decision implications, and limitations.
+See the [approved final Section 6 report](CIS480_T08_Section6_Updated_Final.docx) for exact metrics, decision implications, and limitations. The earlier Markdown version remains as a historical working draft.
 
 ## Demonstration and handoff
 
@@ -70,7 +70,7 @@ See [Section 6](week08_section6_solution_interpretation.md) for exact metrics, d
 
 ## Sources, AI use and integrity
 
-The [Section 6 report](week08_section6_solution_interpretation.md) includes project sources, verification boundaries and the ChatGPT AI-use disclosure. This landing page was drafted with ChatGPT to organize existing GitHub evidence and rubric requirements. It does not certify that outstanding tests or checks occurred. Team members must review, revise, and verify its claims and links before submitting.
+The [approved Section 6 Word report](CIS480_T08_Section6_Updated_Final.docx) includes project sources, verification boundaries and the ChatGPT AI-use disclosure. This landing page was drafted with ChatGPT to organize existing GitHub evidence and rubric requirements. It does not certify that outstanding tests or checks occurred. Team members must review, revise, and verify its claims and links before submitting.
 
 ## Team evidence update — October 13, 2026
 
@@ -93,3 +93,7 @@ Luis confirms that **Rey Guirette and Colen Wilson have both reviewed the final 
 ## Public-access verification update — October 16, 2026
 
 Luis confirmed in Chrome Incognito, while signed out of GitHub, successful access to 13 linked resources: the submission landing page, master Jupyter notebook, corrected PBIX download, M08 PowerPoint download, Section 6 report, validation record, impact-risk register, work plan/contribution record, demo outline, cleaned market CSV, KPI summary CSV, project README, and `requirements.txt`. Each user-reported result is recorded individually in [the validation log](week08_validation_record.md), W08-17 through W08-29. **Public access PASS for these 13 links.** This does not constitute a secrets/privacy scan or final accessibility audit. Freeze/tag and Canvas submission remain pending.
+
+## Approved Section 6 Word report — October 16, 2026
+
+Luis confirmed he reviewed and approved the updated five-page [CIS480 T08 Section 6 report](CIS480_T08_Section6_Updated_Final.docx), then uploaded it to `docs/`. This Word document is the **current Section 6 deliverable**. The earlier Markdown Section 6 file is retained for draft history and should not be treated as the final report. The previously published `v1.0-week8-final` tag predates this upload, so **the tagged release does not yet include the approved Word report**; a new final release/tag or another explicit frozen-commit reference is needed before submitting a frozen version.
