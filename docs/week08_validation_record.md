@@ -356,3 +356,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-23 — Signed-out impact-risk register access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** Opened Impact-risk register from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** Register publicly readable. **Actual:** Luis confirmed the page opened without requesting login. **Status: PASS for signed-out impact-risk register access.**
+
+### W08-24 — Signed-out work plan and contribution record access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** Opened Work plan and contribution record from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** Record publicly readable. **Actual:** Luis confirmed the page opened without login. **Status: PASS for signed-out contribution-record access.**
