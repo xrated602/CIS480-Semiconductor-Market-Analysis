@@ -368,3 +368,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-26 — Signed-out cleaned market data CSV access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** Followed the Cleaned market data CSV link from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** CSV visible or downloadable without credentials. **Actual:** Luis confirmed access without sign-in. **Status: PASS for signed-out cleaned-data CSV access.**
+
+### W08-27 — Signed-out processed KPI summary CSV access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** Followed the Processed KPI summary CSV link from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** CSV publicly viewable or downloadable without credentials. **Actual:** Luis confirmed access without login. **Status: PASS for signed-out KPI summary CSV access.**
