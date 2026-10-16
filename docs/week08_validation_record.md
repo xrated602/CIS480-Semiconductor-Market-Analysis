@@ -340,3 +340,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-19 — Signed-out corrected PBIX download access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** In Chrome Incognito, followed the Power BI dashboard file link from the Week 8 submission package and downloaded the PBIX without signing in. **Expected:** Public download permitted. **Actual:** Luis confirmed download without login. **Status: PASS for signed-out PBIX download.** The downloaded repository copy's visual interactions were separately tested in W08-16.
+
+### W08-20 — Signed-out M08 presentation download access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** Followed the M08 team PowerPoint presentation link from the Week 8 submission package in Chrome Incognito, signed out of GitHub. **Expected:** Presentation downloadable without credentials. **Actual:** Luis confirmed successful public download. **Status: PASS for signed-out PowerPoint download.** This check does not establish accessibility or completeness of presentation content.
