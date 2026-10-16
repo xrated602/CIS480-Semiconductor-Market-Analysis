@@ -328,3 +328,7 @@ Luis clarified the intended Power BI interaction model: **Date slicer filters bo
 ### Week 8 review closure decision — 2026-10-16
 
 Luis elected not to request a second review from Colen. Colen's initial independent review remains on record; Luis implemented the recommended dashboard interaction changes and completed three PASS regression tests against the downloaded GitHub PBIX. **Disposition:** Interaction issue closed based on Luis's documented remediation and validation. **Scope:** This is not a claim that Colen independently retested or signed off on the corrected PBIX. Continue with remaining Week 8 submission and demo tasks.
+
+### W08-17 — Signed-out submission landing-page access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** Opened the Week 8 submission package URL in Chrome Incognito while signed out of GitHub. **Expected:** Landing page publicly visible without credentials. **Actual:** Luis confirmed the package and its links were visible. **Status: PASS for landing-page visibility.** This does not independently confirm that each linked binary artifact downloads or opens; verify those separately.
