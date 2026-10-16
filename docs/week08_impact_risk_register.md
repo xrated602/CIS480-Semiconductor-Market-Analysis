@@ -15,3 +15,7 @@
 ## R5 update — 2026-10-15 independent review
 
 Colen's independent PBIX review found that ticker slicer selection does not consistently update KPI cards and that conflicting chart selections can blank the cards. **R5 is now a confirmed, open interaction defect (not merely an untested possibility).** Proposed response: reproduce the selections; inspect slicer-to-card interactions, measures and cross-filter settings; correct or explicitly document intended behavior; retest against the committed KPI CSV; preserve before/after evidence. Do not call the dashboard fully accepted until this is resolved or disclosed with its impact.
+
+### R5 design clarification — 2026-10-16
+
+Luis explained that the Security slicer intentionally filters **only KPI cards**, while the Date slicer filters **KPI cards and charts**. The absence of Security-slicer filtering on charts is therefore **by design**, not a defect. The remaining risk is whether chart clicks unexpectedly blank KPI cards or prevent a selected security's metrics from displaying; test and document this separately before closing R5. Prior R5 wording treating all ticker/card interaction observations as a confirmed defect is superseded by this clarification.
