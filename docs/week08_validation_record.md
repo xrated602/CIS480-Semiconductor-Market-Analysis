@@ -348,3 +348,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-21 — Signed-out Section 6 report access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** Opened Section 6 working report from Week 8 submission package in Chrome Incognito, signed out of GitHub. **Expected:** Report publicly readable. **Actual:** Luis confirmed report opened without requesting sign-in. **Status: PASS for signed-out Section 6 report access.**
+
+### W08-22 — Signed-out validation-record access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** Opened Week 8 validation record from the submission package in Chrome Incognito, signed out of GitHub. **Expected:** Validation record publicly readable. **Actual:** Luis confirmed page opened without sign-in. **Status: PASS for signed-out validation-record access.**
