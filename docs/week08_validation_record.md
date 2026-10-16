@@ -364,3 +364,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-25 — Signed-out demo outline and readiness checklist access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** Opened Demo outline and readiness checklist from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** Outline publicly readable. **Actual:** Luis confirmed the page opened without login. **Status: PASS for signed-out demo-outline access.**
+
+### W08-26 — Signed-out cleaned market data CSV access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** Followed the Cleaned market data CSV link from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** CSV visible or downloadable without credentials. **Actual:** Luis confirmed access without sign-in. **Status: PASS for signed-out cleaned-data CSV access.**
