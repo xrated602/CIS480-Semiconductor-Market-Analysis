@@ -372,3 +372,7 @@ Luis elected not to request a second review from Colen. Colen's initial independ
 ### W08-27 — Signed-out processed KPI summary CSV access (2026-10-16)
 
 **Tester:** Luis (user-reported). **Method:** Followed the Processed KPI summary CSV link from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** CSV publicly viewable or downloadable without credentials. **Actual:** Luis confirmed access without login. **Status: PASS for signed-out KPI summary CSV access.**
+
+### W08-28 — Signed-out project README access (2026-10-16)
+
+**Tester:** Luis (user-reported). **Method:** Opened Project README from the Week 8 submission package in Chrome Incognito while signed out of GitHub. **Expected:** README publicly readable without credentials. **Actual:** Luis confirmed it opened without requesting login. **Status: PASS for signed-out project README access.**
