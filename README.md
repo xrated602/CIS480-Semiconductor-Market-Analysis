@@ -138,6 +138,7 @@ CIS480-Semiconductor-Market-Analysis/
 │   └── CIS480_Final_Master_Analysis.ipynb
 └── powerbi/
     └── CIS480_Semiconductor_Market_Performance_Dashboard.pbix
+
 ```
 
 The repository separates raw and processed data from the reproducible Jupyter analysis and final Power BI dashboard.
@@ -250,3 +251,20 @@ Week 7 adds an executed notebook and a team-reviewed Section 5 report. The resul
 **Team review:** Rey completed his data-provenance and cumulative-return review; Colen completed his NVDA volatility and risk review. Both reviews are linked in Issue #2. Luis is completing final evidence and submission checks; a separate clarification in Issue #2 corrects the wording about maximum drawdown depth.
 
 **AI-use disclosure:** AI assistance was used to help structure and draft the Week 7 notebook/report text and documentation. The team must verify all calculations, figures, interpretations, citations, and final revisions against executed outputs before submission.
+
+
+## Week 8 — Solution Interpretation and Demo Day (T08/M08)
+
+Week 8 completes the team's final solution interpretation, validation, and Demo Day deliverables for the historical semiconductor market analysis.
+
+- [Final Week 8 submission package](docs/week08_submission_package.md) — central entry point for the submitted team deliverables.
+- [Approved Section 6 Solution Interpretation report](docs/CIS480_T08_Section6_Updated_Final.docx) — final report with results, decision implications, limitations, and evidence.
+- [Week 8 validation record](docs/week08_validation_record.md) — notebook validation, KPI reconciliation, Power BI interaction testing, and public-access checks.
+- [Demo Day PowerPoint presentation](docs/CIS480_M08_Demo_Day_Team_Presentation.pptx) — team presentation artifact.
+- [Final Week 8 release](https://github.com/xrated602/CIS480-Semiconductor-Market-Analysis/releases/tag/v1.1-week8-final) — frozen submission snapshot.
+
+**Submission status:** T08 Section 6 and M08 Demo Day links submitted in Canvas.
+
+**Team review:** Rey independently reviewed the notebook and methodology. Colen reviewed the Power BI dashboard and identified interaction issues that Luis corrected and retested. Both team members reviewed the final submission package.
+
+**Responsible AI use:** ChatGPT assisted with documentation and organization. The team retained responsibility for checking calculations, evidence, and final submissions.
